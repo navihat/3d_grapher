@@ -8,6 +8,8 @@ Khi quyết định ở đây mâu thuẫn với `Docs/planning/`, quyết đị
 
 | Ngày | Quyết định | Nguồn | Biên bản |
 | --- | --- | --- | --- |
+| 2026-11-08 | Bỏ thử nghiệm ở trường THPT (ngoài phạm vi môn học); vẫn đánh giá SUS + pre/post với 5–10 bạn cùng lớp | `<bổ sung>` | — |
+| 2026-11-08 | Chỉ build Android; không build iPhone | `<bổ sung>` | — |
 | 2026-11-08 | Kế hoạch 8 tuần (02/11 – 27/12/2026), nộp toàn bộ cuối tuần 8 | `<bổ sung>` | — |
 | 2026-11-08 | OCR là tính năng thêm, chỉ làm sau Gate 2 nếu lõi ổn | `<bổ sung>` | — |
 | 2026-11-08 | Quản lý mã bằng GitHub + Git LFS; cấu trúc thư mục theo `AGENTS.md` | `<bổ sung>` | — |

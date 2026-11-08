@@ -1,6 +1,6 @@
 # Đề tài 2615 – Đồ thị hàm số 3D trên giấy: Phân tích & Kế hoạch
 
-Oct 28, 2026 · @Trương Văn Thái · Cập nhật 08/11/2026: kế hoạch 8 tuần, OCR thành tính năng thêm
+Oct 28, 2026 · @Trương Văn Thái · Cập nhật 08/11/2026: kế hoạch 8 tuần, OCR thành tính năng thêm; bỏ thử nghiệm ở trường THPT và build iPhone, đánh giá với 5–10 bạn cùng lớp
 
 ## 1. Đề bài 2615 tóm tắt
 
@@ -33,7 +33,7 @@ Yêu cầu chung bắt buộc cho mọi đề:
 | 5 | "Guided exercises" gồm những gì | Bao nhiêu bài? Có chấm điểm tự động không? Có gợi ý từng bước không? | 6–8 bài, mỗi bài: dự đoán → xem đồ thị → trả lời câu hỏi, có chấm tự động \<Tự xây kịch bản sư phạm và kịch bản AR → sau đó sẽ hỏi thầy> | Có |
 | 6 | Mức "2D/3D" | Phải có cả hai, hay 3D là chính? | Cả hai: đường cong 2D dựng đứng trên trang + mặt cong 3D | Không |
 | 7 | Công nghệ bắt buộc hay gợi ý | "Minimum technical requirements" có bắt buộc Unity + Vuforia không? Được làm bản web (MindAR.js + Three.js) không? | Làm Unity + Vuforia; bản web chỉ là phương án dự phòng | Không |
-| 8 | Thiết kế đánh giá | Pre/post quiz có cần nhóm đối chứng (học bằng giấy/GeoGebra) không? 5–10 người có phải là học sinh không? | Một nhóm, pre/post + SUS, 8–10 học sinh THPT | Không |
+| 8 | Thiết kế đánh giá | Pre/post quiz có cần nhóm đối chứng (học bằng giấy/GeoGebra) không? 5–10 người có phải là học sinh không? | Một nhóm, pre/post + SUS, 5–10 người dùng là bạn cùng lớp; không thử nghiệm ở trường THPT (ngoài phạm vi môn học) | Không |
 | 9 | Sản phẩm nộp | Nộp APK, video demo, báo cáo, mã nguồn? Định dạng báo cáo? Tiêu chí chấm? | APK + video + báo cáo + repo GitHub | Không |
 
 ## 3. Vấn đề khúc mắc và hướng giải quyết
@@ -52,7 +52,7 @@ Rủi ro lớn nhất là marker nhận diện kém: một dự án Unity + Vufo
 | Hiệu năng sinh lưới | Kéo thanh trượt tham số phải tính lại toàn bộ lưới | Lưới 60×60 đến 100×100 điểm; biên dịch biểu thức thành delegate một lần; chỉ cập nhật vị trí đỉnh, không tạo mesh mới |
 | Hiển thị mặt cong dễ đọc | Mặt một màu khó nhìn độ cao; mặt sau bị ẩn; ánh sáng nhiều đồ thị ảnh hưởng nhau | Tô màu theo độ cao + đường đồng mức; shader hai mặt; mỗi đồ thị một layer ánh sáng |
 | Gõ công thức trên điện thoại | Bàn phím mặc định thiếu ^, √, π | Bàn phím toán riêng (giống máy tính Casio) + hàm mẫu chọn nhanh |
-| Build iPhone | Unity cần Mac + Xcode để build iOS | Ưu tiên build Android; iPhone chỉ làm nếu mượn được Mac |
+| Build iPhone | Unity cần Mac + Xcode để build iOS | Chỉ build Android; iPhone ngoài phạm vi |
 
 ### 3.2 Sư phạm và đánh giá
 
@@ -61,7 +61,7 @@ Rủi ro lớn nhất là marker nhận diện kém: một dự án Unity + Vufo
 | AR chỉ gây "wow", không có ích học tập | Mỗi bài theo chu trình Dự đoán – Quan sát – Giải thích (POE): học sinh đoán hình dạng trước, xem đồ thị, rồi trả lời câu hỏi |
 | Đồ thị 3D ngoài chương trình THPT | Lõi bám chương trình Toán 12 (khảo sát hàm số, mặt phẳng và mặt cầu trong Oxyz); z = f(x,y) là phần mở rộng |
 | Thiếu nhóm đối chứng | Thiết kế một nhóm pre/post; ghi rõ hạn chế trong báo cáo; nếu đủ người thì so sánh với nhóm học bằng giấy hoặc GeoGebra 2D |
-| Thử với học sinh dưới 18 tuổi | Xin phép trường/giáo viên; phiếu đồng ý; không thu thập thông tin cá nhân |
+| Người tham gia đánh giá không phải học sinh THPT | Đánh giá với bạn cùng lớp; ghi rõ hạn chế này trong báo cáo; không thu thập thông tin cá nhân |
 | Công cụ đo | Pre/post test 8–10 câu về liên hệ tham số – hình dạng; SUS bản tiếng Việt; 2–3 câu hỏi mở |
 
 ## 4. Tech stack và thư viện
@@ -120,12 +120,12 @@ Dự án chạy 8 tuần, từ 02/11 đến 27/12/2026, nộp toàn bộ sản p
 | Tuần | Ngày | Giai đoạn | Đầu ra chính | Gate |
 | --- | --- | --- | --- | --- |
 | 1 | 02–08/11 | Đăng ký, khởi tạo | Đăng ký đề; gửi câu hỏi ở mục 2; tạo project Unity + repo; cấu trúc thư mục và quy ước nhóm | |
-| 2 | 09–15/11 | Prototype | Mục tiêu học tập; chọn 6–8 hàm theo SGK Toán 12; app thử 1 target + mặt z = x² + y² chạy trên máy thật; phiếu bài tập bản 1 đạt 4–5 sao; chốt lịch với trường thử nghiệm | **Gate 1 (15/11):** marker tracking ổn định |
+| 2 | 09–15/11 | Prototype | Mục tiêu học tập; chọn 6–8 hàm theo SGK Toán 12; app thử 1 target + mặt z = x² + y² chạy trên máy thật; phiếu bài tập bản 1 đạt 4–5 sao | **Gate 1 (15/11):** marker tracking ổn định |
 | 3 | 16–22/11 | Xây lõi (1) | Parser + bộ test; vẽ đường cong 2D và mặt 3D; khớp hệ trục AR với hệ trục in; cấu trúc dữ liệu bài tập | |
 | 4 | 23–29/11 | Xây lõi (2) | Thanh trượt tham số; bàn phím toán; nhiều target; luồng POE và chấm điểm; ghi log | |
 | 5 | 30/11–06/12 | Ghép và hoàn thiện lõi | Ghép 3 phần vào Main scene; Extended Tracking; bản nháp nội dung bài tập và bộ câu hỏi pre/post | **Gate 2 (06/12):** chốt tính năng lõi |
 | 6 | 07–13/12 | Nội dung và thử nội bộ | Đủ 6–8 bài theo POE; in phiếu chính thức; chạy thử với 2 người để sửa lỗi; OCR (pix2tex + FastAPI) chỉ khi lõi đã ổn | **Gate 3 (13/12):** app sẵn sàng thử nghiệm |
-| 7 | 14–20/12 | Thử nghiệm | Pre-test → học với app 30–45 phút → post-test + SUS + phỏng vấn ngắn với 8–10 học sinh | |
+| 7 | 14–20/12 | Thử nghiệm | Pre-test → học với app 30–45 phút → post-test + SUS + phỏng vấn ngắn với 5–10 bạn cùng lớp | |
 | 8 | 21–27/12 | Báo cáo và nộp | Phân tích số liệu; viết báo cáo; quay video demo; chuẩn bị slide; nộp 27/12 | |
 
 Hành động tại mỗi gate:
@@ -134,16 +134,11 @@ Hành động tại mỗi gate:
 - **Gate 2:** tính năng nào chưa xong thì cắt, không lùi lịch; từ đây chỉ sửa lỗi và thêm nội dung.
 - **Gate 3:** nếu app chưa ổn định, giảm số bài dùng trong buổi thử nghiệm thay vì lùi buổi thử nghiệm.
 
-Rủi ro lịch: tuần 7 (14–20/12) có thể trùng giai đoạn ôn và thi học kỳ I của nhiều trường THPT. Cần chốt lịch với trường ngay trong tuần 2–3 và có phương án dự phòng (ví dụ thử nghiệm qua giáo viên quen, ghi rõ hạn chế trong báo cáo).
-
 ### 6.2 Cần chuẩn bị ngay
 
 - [ ] Cài thử app mẫu Vuforia trên cả 2 máy Android
 - [ ] Tạo tài khoản Vuforia Developer, lấy license key Basic
 - [ ] Cài Unity LTS tương thích Vuforia trên cả 3 máy tính; tạo repo GitHub + Git LFS
-- [ ] Hỏi xem nhóm có mượn được Mac để build iPhone không
-- [ ] Liên hệ trường THPT hoặc giáo viên Toán để hẹn lịch thử nghiệm tuần 7 (14–20/12/2026)
-- [ ] Soạn phiếu đồng ý tham gia cho học sinh
 - [ ] Chuẩn bị máy in và giấy A4 mờ
 - [ ] Thu thập SUS bản tiếng Việt và mẫu pre/post test
 
@@ -151,7 +146,7 @@ Rủi ro lịch: tuần 7 (14–20/12) có thể trùng giai đoạn ôn và thi
 
 | Thành viên | Phần AR phụ trách (đầu cuối) | Việc phụ (nội dung + đánh giá) | Đầu ra demo được |
 | --- | --- | --- | --- |
-| Duy – Tracking và marker | Cài Vuforia; thiết kế và test phiếu/marker đạt 4–5 sao; nhiều target, mỗi bài một target; khớp hệ trục AR với hệ trục in; Extended Tracking; build APK | Soạn phiếu đồng ý, liên hệ trường thử nghiệm | Quét phiếu bất kỳ, hệ trục AR hiện đúng vị trí, không mất khi che tay |
+| Duy – Tracking và marker | Cài Vuforia; thiết kế và test phiếu/marker đạt 4–5 sao; nhiều target, mỗi bài một target; khớp hệ trục AR với hệ trục in; Extended Tracking; build APK | Tuyển 5–10 bạn cùng lớp tham gia đánh giá | Quét phiếu bất kỳ, hệ trục AR hiện đúng vị trí, không mất khi che tay |
 | Thái – Vẽ đồ thị trong AR + AI | Parser; sinh đường cong 2D và mặt 3D trên marker; tô màu theo độ cao; xử lý gián đoạn; thanh trượt tham số cập nhật thời gian thực; OCR công thức (tính năng thêm, sau lõi) | Ghi log sự kiện, xử lý số liệu pre/post và SUS | Nhập hàm bất kỳ → đồ thị nổi trên giấy; kéo tham số thấy đồ thị đổi |
 | Hùng – Bài tập AR và tương tác | Luồng bài tập POE trong AR (dự đoán → quan sát → trả lời); chạm chọn điểm trên đồ thị (raycast); gợi ý theo bậc; chấm điểm bằng luật; bàn phím toán và UI | Soạn nội dung bài tập và bộ câu hỏi pre/post; chủ trì buổi thử nghiệm | Làm trọn một bài tập trong AR, có điểm và phản hồi |
 

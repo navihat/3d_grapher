@@ -6,7 +6,7 @@
 
 | Thành viên | Vai trò chính | Việc phụ |
 | --- | --- | --- |
-| Duy | Tracking và marker, build APK, giữ `Main.unity` | Phiếu đồng ý, liên hệ trường thử nghiệm |
+| Duy | Tracking và marker, build APK, giữ `Main.unity` | Tuyển người tham gia đánh giá |
 | Thái | Vẽ đồ thị trong AR, parser, OCR (tính năng thêm) | Ghi log, xử lý số liệu pre/post và SUS |
 | Hùng | Bài tập AR, tương tác, UI | Nội dung bài tập, bộ câu hỏi, chủ trì buổi thử nghiệm |
 

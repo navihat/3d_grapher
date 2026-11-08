@@ -26,7 +26,7 @@ Mỗi sprint kéo dài 1 tuần (thứ Hai – Chủ nhật), trùng với tuầ
 | 4 | 23–29/11 | Thanh trượt tham số; bàn phím toán; nhiều target; luồng POE và chấm điểm; ghi log | | |
 | 5 | 30/11–06/12 | Ghép 3 phần vào Main scene; Extended Tracking; nháp nội dung bài tập và câu hỏi pre/post | **Gate 2 (06/12):** chốt tính năng lõi | |
 | 6 | 07–13/12 | Đủ 6–8 bài POE; in phiếu chính thức; thử nội bộ với 2 người; OCR chỉ khi lõi đã ổn | **Gate 3 (13/12):** app sẵn sàng thử nghiệm | |
-| 7 | 14–20/12 | Thử nghiệm với 8–10 học sinh: pre-test → học với app → post-test + SUS + phỏng vấn | | |
+| 7 | 14–20/12 | Đánh giá với 5–10 bạn cùng lớp: pre-test → học với app → post-test + SUS + phỏng vấn | | |
 | 8 | 21–27/12 | Phân tích số liệu, báo cáo, video demo, slide; nộp 27/12 | | |
 
 Hành động khi trượt gate (theo planning mục 6.1):
