@@ -31,7 +31,7 @@ Chiều phụ thuộc (asmdef): `Core ← Tracking, Graphing ← Exercises, UI`.
 ## Quy tắc bắt buộc
 
 1. **Được đọc, không được sửa** `.unity`, `.prefab`, `.meta`, `ProjectSettings/*`, `Packages/packages-lock.json`. Cần thay đổi scene/prefab thì mô tả các bước để người làm trong Unity Editor.
-2. **File mới** (`.cs`, `.asmdef`...) được tạo; Unity tự sinh `.meta`. **Di chuyển / đổi tên / xoá** file trong `Assets/` phải xử lý cả file `.meta` đi kèm (dùng `git mv` cho cả hai), nếu không scene sẽ báo "Missing Script".
+2. **File mới** (`.cs`, `.asmdef`...) được tạo; Unity tự sinh `.meta` khi mở Editor; commit file cùng `.meta` của nó. **Di chuyển / đổi tên / xoá** file trong `Assets/` phải xử lý cả file `.meta` đi kèm (dùng `git mv` cho cả hai), nếu không scene sẽ báo "Missing Script".
 3. Không tạo thư mục rỗng trong `Assets/`.
 4. Không đụng `Library/`, `Temp/`, `Logs/`, `UserSettings/` (Unity tự sinh, không commit).
 5. Code đặt đúng module và namespace `Grapher.<Module>`; xem `Docs/team/coding-conventions.md`.

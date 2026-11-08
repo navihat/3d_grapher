@@ -14,6 +14,7 @@
 | Đổi tên / di chuyển file trong `Assets/` | Làm trong Unity Editor; nếu làm ngoài thì phải di chuyển cả `.meta` |
 | Xoá file | Xoá cả `.meta` |
 | Tạo thư mục mới | Chỉ tạo khi có file đầu tiên bỏ vào (git không lưu thư mục rỗng nhưng lưu `.meta` của nó) |
+| Tạo file ngoài Unity (VS Code, agent) | Mở Unity một lần để sinh `.meta`, rồi commit file + `.meta` cùng lúc |
 | Sửa scene / prefab | Chỉ trong Unity Editor, không sửa tay file YAML |
 | Đang ở Play mode | Mọi thay đổi trong Inspector sẽ mất khi dừng Play |
 | Tài liệu (`.md`, `.docx`, `.pdf`) | Để ngoài `Assets/` |
