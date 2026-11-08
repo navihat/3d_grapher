@@ -5,7 +5,7 @@
 | Course | Augmented Reality – 20261 |
 | Project code | 2615 |
 | Project title | 3D Function Grapher on Paper |
-| Design thinking page (Figma) | **[Figma link — to be added]** |
+| Design thinking page (Figma) | https://www.figma.com/board/eeyqr3DnJk9avPdyrD8QcS/Untitled?node-id=0-1&p=f&t=R2Ikjy8rmYRArX16-0 |
 | Members | 1. Trương Văn Thái – 20231627 · 2. Âu Mạnh Hùng – 20231593 · 3. Đào Khánh Duy – 20231583 |
 | Reported working period | from 02/11/2026 to 08/11/2026 (week 1 of 8) |
 
@@ -17,7 +17,7 @@ We wrote an analysis and planning document. It resolves the 9 open points in the
 
 We created the GitHub repository, the Unity 6000.6.4f1 project (URP, Force Text serialization), the folder structure, a 5-module architecture, team conventions (code, git, Unity workflow, team contract), a decision log, and a detailed sprint 2 plan with 22 tasks.
 
-Cumulative progress: week 1 of 8 is complete. Analysis, planning and conventions are done. Carried over to week 2: installing Vuforia, running on an Android phone, and designing the marker. No functional code yet. Week 2 aims at Gate 1: printed worksheet v1 tracks reliably and the surface z = x² + y² appears correctly on the printed axes.
+Cumulative progress: week 1 of 8 is complete. Analysis, planning and conventions are done. Carried over to week 2: installing Vuforia, running on an Android phone, and designing the marker. No functional code yet. Week 2 aims at Gate 1: printed worksheet v1 tracks reliably and the surface z = x² + y² appears correctly on the printed axes. In parallel, we revisit the papers and projects to write the learning objectives and the learning-theory justification.
 
 ## 2. Review of technical activities
 
@@ -78,7 +78,7 @@ No functional code this week, so no functional tests. Project configuration chec
 - [ ] S2-07: GitHub Projects board + CODEOWNERS per module
 - [ ] S2-19: create `Assets/_Project/` with 5 assembly definitions; finalise the 2 interfaces in `Core`
 - [ ] S2-08, S2-09: add NCalc; expression pre-processing + 30 EditMode tests
-- [ ] S2-10, S2-11, S2-12: surface z = f(x, y); axes and 2D curves; height-based colouring
+- [ ] S2-10, S2-11: surface z = f(x, y); axes and 2D curves (height-based colouring moved to week 3)
 - [ ] S2-13: attach the surface to Duy's image target
 
 **Duy – Tracking and marker**
@@ -93,6 +93,12 @@ No functional code this week, so no functional tests. Project configuration chec
 - [ ] S2-14, S2-15: learning objectives; finalise 6–8 functions and a POE exercise idea for each
 - [ ] S2-16, S2-17: 4-screen wireframe in Figma; FigJam Ideate stage
 - [ ] S2-18: Vietnamese SUS and pre/post test templates
+
+**Research – high priority**
+
+- [ ] S2-23: re-read the 3 papers, one per member, with a summary of at most one page each
+- [ ] S2-24: re-analyse the 4 projects, each member taking those closest to their module
+- [ ] S2-25 (Thái): learning-theory justification linked to the app's features
 
 **Whole team**
 

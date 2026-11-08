@@ -7,7 +7,7 @@
 | Course | Augmented Reality – 20261 |
 | Project code | 2615 |
 | Project title | 3D Function Grapher on Paper – Vẽ đồ thị hàm số 2D/3D trên phiếu bài tập bằng AR |
-| Design thinking page | **[Link Figma — bổ sung sau]** |
+| Design thinking page | https://www.figma.com/board/eeyqr3DnJk9avPdyrD8QcS/Untitled?node-id=0-1&p=f&t=R2Ikjy8rmYRArX16-0 |
 | Members | 1. Trương Văn Thái – 20231627 · 2. Âu Mạnh Hùng – 20231593 · 3. Đào Khánh Duy – 20231583 |
 | Reported working period | từ 02/11/2026 đến 08/11/2026 (tuần 1/8) |
 
@@ -19,7 +19,7 @@ Nhóm đã viết tài liệu phân tích và kế hoạch: làm rõ 9 điểm c
 
 Nhóm đã tạo repo GitHub, project Unity 6000.6.4f1 (URP, Force Text), cấu trúc thư mục, kiến trúc 5 module, bộ quy ước nhóm (code, git, Unity, cam kết nhóm), sổ quyết định và kế hoạch chi tiết sprint 2 (22 việc).
 
-Tiến độ cộng dồn: hết tuần 1/8. Phần phân tích, kế hoạch và quy ước đã xong. Còn chuyển sang tuần 2: cài Vuforia, chạy thử trên máy Android và thiết kế marker. Chưa có code chức năng. Tuần 2 tập trung đạt Gate 1: phiếu in v1 tracking ổn định và mặt z = x² + y² nổi đúng trên hệ trục in.
+Tiến độ cộng dồn: hết tuần 1/8. Phần phân tích, kế hoạch và quy ước đã xong. Còn chuyển sang tuần 2: cài Vuforia, chạy thử trên máy Android và thiết kế marker. Chưa có code chức năng. Tuần 2 tập trung đạt Gate 1: phiếu in v1 tracking ổn định và mặt z = x² + y² nổi đúng trên hệ trục in; song song, nhóm đọc lại tài liệu để viết mục tiêu học tập và lập luận lý thuyết học tập.
 
 ## 2. Các hoạt động kỹ thuật
 
@@ -80,7 +80,7 @@ Tuần này chưa có code nên chưa kiểm thử chức năng. Đã kiểm tra
 - [ ] S2-07: GitHub Projects board + CODEOWNERS theo module
 - [ ] S2-19: tạo `Assets/_Project/` với 5 asmdef; chốt 2 interface trong `Core`
 - [ ] S2-08, S2-09: thêm NCalc; tiền xử lý biểu thức + 30 test EditMode
-- [ ] S2-10, S2-11, S2-12: sinh mặt z = f(x, y); hệ trục và đường cong 2D; tô màu theo độ cao
+- [ ] S2-10, S2-11: sinh mặt z = f(x, y); hệ trục và đường cong 2D (tô màu theo độ cao chuyển sang tuần 3)
 - [ ] S2-13: gắn mặt cong lên target của Duy
 
 **Duy – Tracking và marker**
@@ -95,6 +95,12 @@ Tuần này chưa có code nên chưa kiểm thử chức năng. Đã kiểm tra
 - [ ] S2-14, S2-15: mục tiêu học tập; chốt 6–8 hàm và ý tưởng bài POE
 - [ ] S2-16, S2-17: wireframe 4 màn hình trên Figma; FigJam phần Ideate
 - [ ] S2-18: SUS bản tiếng Việt và mẫu pre/post test
+
+**Nghiên cứu – ưu tiên cao**
+
+- [ ] S2-23: đọc lại 3 bài nghiên cứu, mỗi người 1 bài, tóm tắt tối đa 1 trang/bài
+- [ ] S2-24: phân tích lại 4 dự án, mỗi người phần gần module của mình
+- [ ] S2-25 (Thái): lập luận lý thuyết học tập gắn với tính năng của app
 
 **Cả nhóm**
 
