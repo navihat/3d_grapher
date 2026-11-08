@@ -21,8 +21,8 @@ Mỗi sprint kéo dài 1 tuần (thứ Hai – Chủ nhật), trùng với tuầ
 | Sprint | Ngày | Mục tiêu sprint | Gate | File |
 | --- | --- | --- | --- | --- |
 | 1 | 02–08/11 | Đăng ký đề, khởi tạo project + repo, quy ước nhóm | | xem báo cáo tuần 1 |
-| 2 | 09–15/11 | Quét phiếu in v1, mặt z = x² + y² nổi đúng trên hệ trục in, chạy trên Android thật | **Gate 1 (15/11):** marker tracking ổn định | [sprint-02.md](sprint-02.md) |
-| 3 | 16–22/11 | Parser + bộ test; đường cong 2D và mặt 3D; khớp hệ trục AR với hệ trục in; cấu trúc dữ liệu bài tập | | |
+| 2 | 09–15/11 | Quét phiếu in v1, mặt z = x² + y² nổi đúng trên hệ trục in, chạy trên Android thật; nghiên cứu lại tài liệu, viết mục tiêu học tập và lý thuyết học tập | **Gate 1 (15/11):** marker tracking ổn định | [sprint-02.md](sprint-02.md) |
+| 3 | 16–22/11 | Parser + bộ test; đường cong 2D và mặt 3D, tô màu theo độ cao; khớp hệ trục AR với hệ trục in; cấu trúc dữ liệu bài tập | | |
 | 4 | 23–29/11 | Thanh trượt tham số; bàn phím toán; nhiều target; luồng POE và chấm điểm; ghi log | | |
 | 5 | 30/11–06/12 | Ghép 3 phần vào Main scene; Extended Tracking; nháp nội dung bài tập và câu hỏi pre/post | **Gate 2 (06/12):** chốt tính năng lõi | |
 | 6 | 07–13/12 | Đủ 6–8 bài POE; in phiếu chính thức; thử nội bộ với 2 người; OCR chỉ khi lõi đã ổn | **Gate 3 (13/12):** app sẵn sàng thử nghiệm | |

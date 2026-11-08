@@ -1,6 +1,6 @@
 # Đề tài 2615 – Đồ thị hàm số 3D trên giấy: Phân tích & Kế hoạch
 
-Oct 28, 2026 · @Trương Văn Thái · Cập nhật 08/11/2026: kế hoạch 8 tuần, OCR thành tính năng thêm; bỏ thử nghiệm ở trường THPT và build iPhone, đánh giá với 5–10 bạn cùng lớp
+Oct 28, 2026 · @Trương Văn Thái · Cập nhật 08/11/2026: kế hoạch 8 tuần, OCR thành tính năng thêm; bỏ thử nghiệm ở trường THPT và build iPhone, đánh giá với 5–10 bạn cùng lớp; tuần 2 thêm phần nghiên cứu (mục tiêu học tập, lý thuyết học tập)
 
 ## 1. Đề bài 2615 tóm tắt
 
@@ -14,7 +14,9 @@ Oct 28, 2026 · @Trương Văn Thái · Cập nhật 08/11/2026: kế hoạch 8 
 | Sản phẩm kỳ vọng | Grapher for functions and surfaces; worksheet | Công cụ vẽ hàm số và mặt cong; phiếu bài tập |
 | Thiết bị | Most Android phones and iPhones | Hầu hết Android và iPhone |
 
-Yêu cầu chung bắt buộc cho mọi đề:
+Yêu cầu chung bắt buộc cho mọi đề (nguyên văn):
+
+> "Every project should include: a stated learning objective, a short justification grounded in learning theory, and a small usability or learning evaluation with 5–10 real users (e.g. SUS plus a pre/post quiz)."
 
 - Mục tiêu học tập được phát biểu rõ.
 - Lập luận ngắn dựa trên lý thuyết học tập.
@@ -111,6 +113,8 @@ Lõi dùng Unity + Vuforia theo đúng đề, parser NCalc (MIT) và Mesh API c�
 - **Học đa phương tiện và mã hóa kép (Mayer, Paivio):** chữ và hình đặt sát nhau (nguyên tắc liền kề không gian) — đồ thị nổi ngay trên đề bài.
 - **Dự đoán – Quan sát – Giải thích (POE):** cấu trúc cho mỗi bài tập có hướng dẫn.
 
+Đây mới là danh sách ban đầu. Tuần 2 nhóm đọc lại 3 bài ở mục 5.2 và 4 dự án ở mục 5.1, rồi viết mục tiêu học tập và lập luận lý thuyết học tập đầy đủ trong `Docs/planning/learning-design.md`.
+
 ## 6. Kế hoạch 8 tuần
 
 Dự án chạy 8 tuần, từ 02/11 đến 27/12/2026, nộp toàn bộ sản phẩm cuối tuần 8. Tính năng lõi phải chốt trước 06/12 (hết tuần 5), để còn 3 tuần cho nội dung, thử nghiệm và báo cáo. So với bản 2.5 tháng: rút ngắn khoảng 2 tuần, phần nội dung + thử nghiệm + báo cáo từ 4 tuần còn 3 tuần, OCR chuyển thành tính năng thêm.
@@ -120,8 +124,8 @@ Dự án chạy 8 tuần, từ 02/11 đến 27/12/2026, nộp toàn bộ sản p
 | Tuần | Ngày | Giai đoạn | Đầu ra chính | Gate |
 | --- | --- | --- | --- | --- |
 | 1 | 02–08/11 | Đăng ký, khởi tạo | Đăng ký đề; gửi câu hỏi ở mục 2; tạo project Unity + repo; cấu trúc thư mục và quy ước nhóm | |
-| 2 | 09–15/11 | Prototype | Mục tiêu học tập; chọn 6–8 hàm theo SGK Toán 12; app thử 1 target + mặt z = x² + y² chạy trên máy thật; phiếu bài tập bản 1 đạt 4–5 sao | **Gate 1 (15/11):** marker tracking ổn định |
-| 3 | 16–22/11 | Xây lõi (1) | Parser + bộ test; vẽ đường cong 2D và mặt 3D; khớp hệ trục AR với hệ trục in; cấu trúc dữ liệu bài tập | |
+| 2 | 09–15/11 | Prototype + nghiên cứu | Đọc lại 3 bài nghiên cứu và 4 dự án; viết mục tiêu học tập và lập luận lý thuyết học tập; chọn 6–8 hàm theo SGK Toán 12; app thử 1 target + mặt z = x² + y² chạy trên máy thật; phiếu bài tập bản 1 đạt 4–5 sao | **Gate 1 (15/11):** marker tracking ổn định |
+| 3 | 16–22/11 | Xây lõi (1) | Parser + bộ test; vẽ đường cong 2D và mặt 3D, tô màu theo độ cao; khớp hệ trục AR với hệ trục in; cấu trúc dữ liệu bài tập | |
 | 4 | 23–29/11 | Xây lõi (2) | Thanh trượt tham số; bàn phím toán; nhiều target; luồng POE và chấm điểm; ghi log | |
 | 5 | 30/11–06/12 | Ghép và hoàn thiện lõi | Ghép 3 phần vào Main scene; Extended Tracking; bản nháp nội dung bài tập và bộ câu hỏi pre/post | **Gate 2 (06/12):** chốt tính năng lõi |
 | 6 | 07–13/12 | Nội dung và thử nội bộ | Đủ 6–8 bài theo POE; in phiếu chính thức; chạy thử với 2 người để sửa lỗi; OCR (pix2tex + FastAPI) chỉ khi lõi đã ổn | **Gate 3 (13/12):** app sẵn sàng thử nghiệm |
@@ -147,8 +151,8 @@ Hành động tại mỗi gate:
 | Thành viên | Phần AR phụ trách (đầu cuối) | Việc phụ (nội dung + đánh giá) | Đầu ra demo được |
 | --- | --- | --- | --- |
 | Duy – Tracking và marker | Cài Vuforia; thiết kế và test phiếu/marker đạt 4–5 sao; nhiều target, mỗi bài một target; khớp hệ trục AR với hệ trục in; Extended Tracking; build APK | Tuyển 5–10 bạn cùng lớp tham gia đánh giá | Quét phiếu bất kỳ, hệ trục AR hiện đúng vị trí, không mất khi che tay |
-| Thái – Vẽ đồ thị trong AR + AI | Parser; sinh đường cong 2D và mặt 3D trên marker; tô màu theo độ cao; xử lý gián đoạn; thanh trượt tham số cập nhật thời gian thực; OCR công thức (tính năng thêm, sau lõi) | Ghi log sự kiện, xử lý số liệu pre/post và SUS | Nhập hàm bất kỳ → đồ thị nổi trên giấy; kéo tham số thấy đồ thị đổi |
-| Hùng – Bài tập AR và tương tác | Luồng bài tập POE trong AR (dự đoán → quan sát → trả lời); chạm chọn điểm trên đồ thị (raycast); gợi ý theo bậc; chấm điểm bằng luật; bàn phím toán và UI | Soạn nội dung bài tập và bộ câu hỏi pre/post; chủ trì buổi thử nghiệm | Làm trọn một bài tập trong AR, có điểm và phản hồi |
+| Thái – Vẽ đồ thị trong AR + AI | Parser; sinh đường cong 2D và mặt 3D trên marker; tô màu theo độ cao; xử lý gián đoạn; thanh trượt tham số cập nhật thời gian thực; OCR công thức (tính năng thêm, sau lõi) | Lập luận lý thuyết học tập; ghi log sự kiện, xử lý số liệu pre/post và SUS | Nhập hàm bất kỳ → đồ thị nổi trên giấy; kéo tham số thấy đồ thị đổi |
+| Hùng – Bài tập AR và tương tác | Luồng bài tập POE trong AR (dự đoán → quan sát → trả lời); chạm chọn điểm trên đồ thị (raycast); gợi ý theo bậc; chấm điểm bằng luật; bàn phím toán và UI | Mục tiêu học tập; soạn nội dung bài tập và bộ câu hỏi pre/post; chủ trì buổi thử nghiệm | Làm trọn một bài tập trong AR, có điểm và phản hồi |
 
 Cả 3 người đều làm một phần AR chạy trên điện thoại, khoảng 80–85% thời gian. Việc nội dung và đánh giá chia đều, mỗi người khoảng 15–20%; cả nhóm cùng có mặt buổi thử nghiệm. Mỗi người viết chương báo cáo về phần mình làm và review code của người khác hàng tuần. Ba phần ghép qua giao diện chung: Duy cung cấp gốc tọa độ theo target, Thái cung cấp hàm vẽ đồ thị, Hùng gọi cả hai trong bài tập.
 

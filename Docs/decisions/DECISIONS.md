@@ -8,6 +8,7 @@ Khi quyết định ở đây mâu thuẫn với `Docs/planning/`, quyết đị
 
 | Ngày | Quyết định | Nguồn | Biên bản |
 | --- | --- | --- | --- |
+| 2026-11-08 | Tuần 2 thêm phần nghiên cứu: đọc lại 3 bài + 4 dự án, viết mục tiêu học tập và lập luận lý thuyết học tập (yêu cầu bắt buộc của môn); tô màu theo độ cao chuyển sang tuần 3 | `<bổ sung>` | — |
 | 2026-11-08 | Bỏ thử nghiệm ở trường THPT (ngoài phạm vi môn học); vẫn đánh giá SUS + pre/post với 5–10 bạn cùng lớp | `<bổ sung>` | — |
 | 2026-11-08 | Chỉ build Android; không build iPhone | `<bổ sung>` | — |
 | 2026-11-08 | Kế hoạch 8 tuần (02/11 – 27/12/2026), nộp toàn bộ cuối tuần 8 | `<bổ sung>` | — |

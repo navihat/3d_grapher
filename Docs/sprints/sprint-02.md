@@ -1,6 +1,6 @@
 # Sprint 2 — 09/11 – 15/11/2026
 
-**Mục tiêu sprint:** quét phiếu in v1 bằng điện thoại Android, mặt z = x² + y² nổi đúng trên hệ trục in và không biến mất khi tay che một góc phiếu.
+**Mục tiêu sprint:** quét phiếu in v1 bằng điện thoại Android, mặt z = x² + y² nổi đúng trên hệ trục in và không biến mất khi tay che một góc phiếu. Song song: nghiên cứu lại tài liệu, viết mục tiêu học tập và lập luận lý thuyết học tập (yêu cầu bắt buộc của môn).
 
 **Gate 1 (CN 15/11):** marker tracking ổn định. Đạt khi cả 4 điều sau đúng trên máy thật:
 
@@ -35,18 +35,28 @@ Hiện trạng đầu sprint: project Unity mới (chưa có Vuforia, NCalc, `As
 | S2-09 | Tiền xử lý biểu thức kiểu giáo khoa (`2x`, `sin x`, `x²`) + bộ 30 test EditMode | 30 test chạy xanh, có `-2^2 = -4`; lỗi cú pháp trả thông báo tiếng Việt | | ⬜ |
 | S2-10 | Sinh mặt z = f(x, y) trên lưới N×N, bỏ tam giác có đỉnh NaN/∞ | Vẽ được `x^2 + y^2`, `sin(x)*cos(y)`, `1/x`; đo thời gian sinh lưới N = 60 và N = 100 | | ⬜ |
 | S2-11 | Hệ trục Oxyz và đường cong 2D bằng LineRenderer | Vẽ `y = x^2` dựng đứng trên mặt phiếu, kèm trục | | ⬜ |
-| S2-12 | Tô màu mặt theo độ cao | Màu đổi theo z, nhìn rõ trên máy thật | | ⬜ |
+| S2-12 | Tô màu mặt theo độ cao (chuyển sprint 3 để dành thời gian cho S2-23 – S2-25) | Màu đổi theo z, nhìn rõ trên máy thật | | ➡️ |
 | S2-13 | Gắn mặt cong làm con của `GraphRoot` (cùng Duy) | Mặt z = x² + y² nổi trên phiếu in, chạy trên Android | | ⬜ |
 
 ### Hùng — Bài tập và UI
 
 | # | Việc | Xong khi | Issue | Trạng thái |
 | --- | --- | --- | --- | --- |
-| S2-14 | Viết mục tiêu học tập | 3–5 mục tiêu đo được, gắn với chương trình Toán 10–12 | | ⬜ |
+| S2-14 | Viết mục tiêu học tập (dựa trên S2-23, S2-24) | 3–5 mục tiêu đo được, gắn với chương trình Toán 10–12; ghi vào `Docs/planning/learning-design.md` | | ⬜ |
 | S2-15 | Chốt 6–8 hàm theo SGK + ý tưởng bài POE cho từng hàm | Danh sách hàm, mỗi hàm có câu dự đoán và câu hỏi giải thích; ghi vào `DECISIONS.md` | | ⬜ |
 | S2-16 | Thiết kế UI trên Figma: ô nhập hàm, bàn phím toán, thanh trượt tham số | Wireframe 4 màn hình: quét phiếu → nhập hàm → xem đồ thị → trả lời | | ⬜ |
 | S2-17 | Hoàn thiện FigJam phần Ideate | Link FigJam đưa vào báo cáo tuần 2 | | ⬜ |
 | S2-18 | Thu thập SUS bản tiếng Việt và mẫu pre/post test | File lưu trên Drive nhóm | | ⬜ |
+
+### Nghiên cứu — ưu tiên cao
+
+Yêu cầu bắt buộc của môn: mục tiêu học tập, lập luận ngắn dựa trên lý thuyết học tập, đánh giá nhỏ với 5–10 người dùng thật.
+
+| # | Việc | Người chính | Xong khi | Trạng thái |
+| --- | --- | --- | --- | --- |
+| S2-23 | Đọc lại 3 bài nghiên cứu, mỗi người 1 bài: Thái – Cheong et al. 2024; Hùng – Ahmad & Junaini 2020; Duy – tổng quan IJLTER | Mỗi người | Tóm tắt tối đa 1 trang/bài: câu hỏi nghiên cứu, mẫu, phương pháp, công cụ đo, kết quả, điều áp dụng cho 2615; ghi vào `Docs/planning/research-notes.md` | ⬜ |
+| S2-24 | Phân tích lại 4 dự án: Duy – AR 3D Graphs; Thái – Math World, Catlike Coding; Hùng – GeoGebra 3D AR | Mỗi người | Mỗi dự án: làm được gì, còn thiếu gì, bài học cho module của mình; ghi vào `research-notes.md` | ⬜ |
+| S2-25 | Viết lập luận lý thuyết học tập (đa biểu diễn, học đa phương tiện, POE), mỗi lý thuyết gắn với tính năng cụ thể của app | Thái (Hùng review) | Ghi vào `Docs/planning/learning-design.md`, có trích dẫn | ⬜ |
 
 ### Cả nhóm
 
@@ -60,7 +70,8 @@ Hiện trạng đầu sprint: project Unity mới (chưa có Vuforia, NCalc, `As
 | Ngày | Việc |
 | --- | --- |
 | T2 09/11 | Duy và Hùng clone repo; tạo asmdef (S2-19) trước, để mọi người làm trên nhánh riêng |
-| T4 11/11 | Cập nhật trạng thái giữa tuần; marker v1 phải có số sao — dưới 4 sao thì sửa ngay |
+| T4 11/11 | Cập nhật trạng thái giữa tuần; marker v1 phải có số sao — dưới 4 sao thì sửa ngay; xong tóm tắt bài và dự án (S2-23, S2-24) |
+| T6 13/11 | Xong mục tiêu học tập (S2-14) và lập luận lý thuyết (S2-25); cả nhóm đọc góp ý |
 | T7 14/11 | Họp tích hợp trên máy Android thật: Tracking + Graphing (S2-13) |
 | CN 15/11 | Demo Gate 1, review sprint, lập sprint 3, viết báo cáo tuần 2 |
 
@@ -72,6 +83,7 @@ Hiện trạng đầu sprint: project Unity mới (chưa có Vuforia, NCalc, `As
 | Vuforia chưa hỗ trợ Unity 6000.6.4f1 | Lỗi khi import package | Kiểm tra bảng tương thích trước khi cài; nếu cần, cả nhóm đổi bản Unity và ghi vào `DECISIONS.md` |
 | NCalc không chạy trên Android (IL2CPP) | Lỗi runtime trên APK dù Editor chạy được | Build thử sớm một APK có gọi NCalc; dự phòng tự viết parser shunting-yard |
 | Tích hợp dồn vào cuối tuần | S2-19 chưa merge vào T3 | Chốt interface đơn giản trước, chỉnh sau |
+| Nghiên cứu lấn thời gian làm Gate 1 | Tóm tắt S2-23, S2-24 chưa xong vào T4 | Giới hạn 1 trang/bài; đọc phần phương pháp và kết quả trước, phần tổng quan sau |
 
 ## Review (điền ở buổi họp CN 15/11)
 
