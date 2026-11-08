@@ -31,7 +31,7 @@ Tiến độ cộng dồn: hết tuần 1/8. Phần phân tích, kế hoạch v�
 
 **Activity 4: Dựng project và quy ước làm việc nhóm.** Tạo project Unity 6000.6.4f1 với URP, Asset Serialization = Force Text để scene/prefab đọc và diff được. Tạo repo GitHub và mời Duy, Hùng; cấu hình `.gitignore` cho Unity, `.gitattributes` cho Git LFS (ảnh, PDF, DOCX, DLL) và UnityYAMLMerge; commit theo Conventional Commits. Viết tài liệu nhóm: tổng quan kiến trúc, quy ước code C#, git workflow (GitHub Flow, Conventional Commits, quy tắc scene), quy trình làm việc với Unity (`.meta`, GUID), cam kết nhóm, hướng dẫn cho AI agent (`AGENTS.md`). Các tài liệu này đang ở dạng bản nháp, chờ cả nhóm chốt.
 
-**Activity 5: Lập kế hoạch.** Lịch 8 tuần (02/11 – 27/12/2026) với 3 gate; phân công 3 vai trò; sổ quyết định (3 quyết định đầu tiên); kế hoạch sprint 2 gồm 22 việc có tiêu chí "xong khi" và 4 tiêu chí đạt Gate 1.
+**Activity 5: Lập kế hoạch.** Lịch 8 tuần (02/11 – 27/12/2026) với 3 gate; phân công 3 vai trò; sổ quyết định; kế hoạch sprint 2 gồm 22 việc có tiêu chí "xong khi" và 4 tiêu chí đạt Gate 1.
 
 ## 3. Đóng góp cá nhân
 
@@ -122,8 +122,8 @@ Tuần này chưa có code nên chưa kiểm thử chức năng. Đã kiểm tra
 | Tuần | Ngày | Mục tiêu | Gate |
 | --- | --- | --- | --- |
 | 1 | 02–08/11 | Đăng ký đề, phân tích, kế hoạch, khởi tạo project, quy ước nhóm | |
-| 2 | 09–15/11 | Phiếu in v1; mặt z = x² + y² nổi đúng trên hệ trục in, chạy trên Android | **Gate 1:** marker tracking ổn định |
-| 3 | 16–22/11 | Parser + bộ test; đường cong 2D và mặt 3D; khớp hệ trục; dữ liệu bài tập | |
+| 2 | 09–15/11 | Phiếu in v1; mặt z = x² + y² nổi đúng trên hệ trục in, chạy trên Android; nghiên cứu cho mục tiêu học tập và lý thuyết học tập | **Gate 1:** marker tracking ổn định |
+| 3 | 16–22/11 | Parser + bộ test; đường cong 2D và mặt 3D, tô màu theo độ cao; khớp hệ trục; dữ liệu bài tập | |
 | 4 | 23–29/11 | Thanh trượt tham số; bàn phím toán; nhiều target; luồng POE và chấm điểm; ghi log | |
 | 5 | 30/11–06/12 | Ghép 3 module; Extended Tracking; nháp nội dung bài và câu hỏi pre/post | **Gate 2:** chốt tính năng lõi |
 | 6 | 07–13/12 | Đủ 6–8 bài POE; in phiếu chính thức; thử nội bộ | **Gate 3:** sẵn sàng thử nghiệm |

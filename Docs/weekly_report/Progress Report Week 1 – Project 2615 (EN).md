@@ -29,7 +29,7 @@ Cumulative progress: week 1 of 8 is complete. Analysis, planning and conventions
 
 **Activity 4: Project setup and team conventions.** Created a Unity 6000.6.4f1 project with URP and Asset Serialization = Force Text, so scenes and prefabs are readable and diffable. Created the GitHub repository and invited Duy and Hùng; configured `.gitignore` for Unity and `.gitattributes` for Git LFS (images, PDF, DOCX, DLL) and UnityYAMLMerge; commits follow Conventional Commits. Wrote team documents: architecture overview, C# coding conventions, git workflow (GitHub Flow, Conventional Commits, scene ownership rules), Unity workflow (`.meta` files, GUIDs), team contract, and instructions for AI coding agents (`AGENTS.md`). These documents are drafts awaiting team sign-off.
 
-**Activity 5: Planning.** 8-week schedule (02/11 – 27/12/2026) with 3 gates; three fixed roles; a decision log (first 3 decisions); a sprint 2 plan of 22 tasks, each with a "done when" criterion, plus 4 pass criteria for Gate 1.
+**Activity 5: Planning.** 8-week schedule (02/11 – 27/12/2026) with 3 gates; three fixed roles; a decision log; a sprint 2 plan of 22 tasks, each with a "done when" criterion, plus 4 pass criteria for Gate 1.
 
 ## 3. Personal contribution
 
@@ -120,8 +120,8 @@ To reach Gate 1: Duy and Hùng must clone the repository and set up their enviro
 | Week | Dates | Goal | Gate |
 | --- | --- | --- | --- |
 | 1 | 02–08/11 | Topic registration, analysis, planning, project setup, team conventions | |
-| 2 | 09–15/11 | Worksheet v1; z = x² + y² on the printed axes, running on Android | **Gate 1:** reliable tracking |
-| 3 | 16–22/11 | Parser + tests; 2D curves and 3D surfaces; axis alignment; exercise data | |
+| 2 | 09–15/11 | Worksheet v1; z = x² + y² on the printed axes, running on Android; research for learning objectives and learning theory | **Gate 1:** reliable tracking |
+| 3 | 16–22/11 | Parser + tests; 2D curves and 3D surfaces with height colouring; axis alignment; exercise data | |
 | 4 | 23–29/11 | Parameter sliders; math keyboard; multiple targets; POE flow and scoring; logging | |
 | 5 | 30/11–06/12 | Integrate the 3 modules; Extended Tracking; draft exercises and pre/post questions | **Gate 2:** core feature freeze |
 | 6 | 07–13/12 | 6–8 POE exercises; final printed worksheets; internal trial | **Gate 3:** ready for the study |
