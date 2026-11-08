@@ -1,0 +1,54 @@
+# Unity — thư mục tự sinh
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Asset Store tools
+/[Aa]ssets/AssetStoreTools*
+
+# File IDE / project do Unity sinh ra
+.vs/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# .meta của file bị bỏ qua
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Crash, build
+sysinfo.txt
+crashlytics-buildid.txt
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Agent: cài đặt cá nhân
+.claude/settings.local.json
+
+# Hệ điều hành
+.DS_Store
+Thumbs.db
