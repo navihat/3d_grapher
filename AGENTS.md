@@ -1,6 +1,6 @@
 # AGENTS.md — 3D Function Grapher on Paper (Đề tài 2615)
 
-App AR trên Android: quét phiếu bài tập in, vẽ đồ thị hàm số 2D/3D nổi trên trang giấy, kèm bài tập có hướng dẫn theo chu trình Dự đoán – Quan sát – Giải thích (POE). Nhóm 3 người, 8 tuần (02/11 – 27/12/2026).
+App AR trên Android: quét phiếu bài tập in, vẽ đồ thị hàm số 2D/3D nổi trên trang giấy, kèm bài tập có hướng dẫn theo chu trình Dự đoán – Quan sát – Giải thích (POE). Nhóm 3 người, 8 tuần (02/11 – 23/12/2026, hạn nộp 13h30 ngày 23/12).
 
 ## Stack
 

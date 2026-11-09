@@ -8,6 +8,8 @@ Khi quyết định ở đây mâu thuẫn với `Docs/planning/`, quyết đị
 
 | Ngày | Quyết định | Nguồn | Biên bản |
 | --- | --- | --- | --- |
+| 2026-11-09 | Hạn nộp term project: **13h30 thứ Tư 23/12/2026** (thay cho 27/12); tuần 8 chỉ còn 21/12 – sáng 23/12 | `<bổ sung>` | — |
+| 2026-11-08 | **(Chưa chốt)** Đề xuất: mỗi marker là một bài tập thực tế có câu hỏi a, b, c; bấm vào hình để chọn vẽ thêm (đường cao, trung tuyến...), bấm vào cạnh để xem độ dài; nhập phương trình để vẽ đồ thị. Còn vướng mục tiêu bài học trong AR, bàn tiếp 2026-11-10 | `hop-nhom` | [biên bản](2026-11-08_hop-nhom_huong-bai-tap-ar.md) |
 | 2026-11-08 | Tuần 2 thêm phần nghiên cứu: đọc lại 3 bài + 4 dự án, viết mục tiêu học tập và lập luận lý thuyết học tập (yêu cầu bắt buộc của môn); tô màu theo độ cao chuyển sang tuần 3 | `<bổ sung>` | — |
 | 2026-11-08 | Bỏ thử nghiệm ở trường THPT (ngoài phạm vi môn học); vẫn đánh giá SUS + pre/post với 5–10 bạn cùng lớp | `<bổ sung>` | — |
 | 2026-11-08 | Chỉ build Android; không build iPhone | `<bổ sung>` | — |

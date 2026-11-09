@@ -1,10 +1,10 @@
 # Đề tài 2615 – Đồ thị hàm số 3D trên giấy: Phân tích & Kế hoạch
 
-Oct 28, 2026 · @Trương Văn Thái · Cập nhật 08/11/2026: kế hoạch 8 tuần, OCR thành tính năng thêm; bỏ thử nghiệm ở trường THPT và build iPhone, đánh giá với 5–10 bạn cùng lớp; tuần 2 thêm phần nghiên cứu (mục tiêu học tập, lý thuyết học tập)
+Oct 28, 2026 · @Trương Văn Thái · Cập nhật 08/11/2026: kế hoạch 8 tuần, OCR thành tính năng thêm; bỏ thử nghiệm ở trường THPT và build iPhone, đánh giá với 5–10 bạn cùng lớp; tuần 2 thêm phần nghiên cứu (mục tiêu học tập, lý thuyết học tập) · Cập nhật 09/11/2026: hạn nộp 13h30 ngày 23/12/2026
 
 ## 1. Đề bài 2615 tóm tắt
 
-Đề 2615 yêu cầu một ứng dụng AR nhận diện phiếu bài tập in và vẽ đồ thị hàm số 2D/3D nổi trên trang giấy, kèm bài tập có hướng dẫn. Thời gian thực hiện 8 tuần (02/11 – 27/12/2026), nhóm tối đa 3 người.
+Đề 2615 yêu cầu một ứng dụng AR nhận diện phiếu bài tập in và vẽ đồ thị hàm số 2D/3D nổi trên trang giấy, kèm bài tập có hướng dẫn. Thời gian thực hiện 8 tuần (02/11 – 23/12/2026, hạn nộp 13h30 ngày 23/12), nhóm tối đa 3 người.
 
 | Mục | Nguyên văn (EN) | Dịch |
 | --- | --- | --- |
@@ -117,7 +117,7 @@ Lõi dùng Unity + Vuforia theo đúng đề, parser NCalc (MIT) và Mesh API c�
 
 ## 6. Kế hoạch 8 tuần
 
-Dự án chạy 8 tuần, từ 02/11 đến 27/12/2026, nộp toàn bộ sản phẩm cuối tuần 8. Tính năng lõi phải chốt trước 06/12 (hết tuần 5), để còn 3 tuần cho nội dung, thử nghiệm và báo cáo. So với bản 2.5 tháng: rút ngắn khoảng 2 tuần, phần nội dung + thử nghiệm + báo cáo từ 4 tuần còn 3 tuần, OCR chuyển thành tính năng thêm.
+Dự án chạy 8 tuần, từ 02/11 đến 23/12/2026, nộp toàn bộ sản phẩm trước 13h30 thứ Tư 23/12 (tuần 8). Tính năng lõi phải chốt trước 06/12 (hết tuần 5), để còn 3 tuần cho nội dung, thử nghiệm và báo cáo. So với bản 2.5 tháng: rút ngắn khoảng 2 tuần, phần nội dung + thử nghiệm + báo cáo từ 4 tuần còn 3 tuần, OCR chuyển thành tính năng thêm.
 
 ### 6.1 Lịch theo tuần
 
@@ -130,7 +130,7 @@ Dự án chạy 8 tuần, từ 02/11 đến 27/12/2026, nộp toàn bộ sản p
 | 5 | 30/11–06/12 | Ghép và hoàn thiện lõi | Ghép 3 phần vào Main scene; Extended Tracking; bản nháp nội dung bài tập và bộ câu hỏi pre/post | **Gate 2 (06/12):** chốt tính năng lõi |
 | 6 | 07–13/12 | Nội dung và thử nội bộ | Đủ 6–8 bài theo POE; in phiếu chính thức; chạy thử với 2 người để sửa lỗi; OCR (pix2tex + FastAPI) chỉ khi lõi đã ổn | **Gate 3 (13/12):** app sẵn sàng thử nghiệm |
 | 7 | 14–20/12 | Thử nghiệm | Pre-test → học với app 30–45 phút → post-test + SUS + phỏng vấn ngắn với 5–10 bạn cùng lớp | |
-| 8 | 21–27/12 | Báo cáo và nộp | Phân tích số liệu; viết báo cáo; quay video demo; chuẩn bị slide; nộp 27/12 | |
+| 8 | 21–23/12 | Báo cáo và nộp | Phân tích số liệu; viết báo cáo; quay video demo; chuẩn bị slide; nộp trước 13h30 23/12 | |
 
 Hành động tại mỗi gate:
 
