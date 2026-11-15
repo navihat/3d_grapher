@@ -89,6 +89,7 @@ Chưa có code nên tuần này chưa kiểm thử chức năng.
 - [ ] S2-11, S2-10: đường cong y = f(x) và tô miền; khối tròn xoay quanh Ox
 - [ ] S2-13: gắn đồ thị và khối lên target của Duy, chạy trên Android
 - [ ] S2-25: lập luận lý thuyết học tập theo hướng mới
+- [ ] S3-05, S3-06: 50 test parser kèm kiểm tra miền; điểm gián đoạn và cập nhật mesh tại chỗ
 
 **Duy – Tracking và marker**
 
@@ -96,12 +97,14 @@ Chưa có code nên tuần này chưa kiểm thử chức năng.
 - [ ] S2-02, S2-03: phiếu marker v1 có hệ trục in, đạt 4–5 sao; in thử và đo tracking
 - [ ] S2-04, S2-05: `GraphRoot` trùng hệ trục in; Extended Tracking
 - [ ] S2-06: scene Main và Sandbox; APK chạy trên 2 máy Android
+- [ ] S3-04: đo và chỉnh độ lệch giữa hệ trục AR và hệ trục in
 
 **Hùng – Bài tập và UI**
 
 - [ ] S2-14, S2-15: mục tiêu học tập; bộ hàm kèm cận và 3–4 bài POE
 - [ ] S2-16, S2-17: wireframe 4 màn hình trên Figma; FigJam phần Ideate
 - [ ] S3-01: cấu trúc dữ liệu bài tập (ScriptableObject)
+- [ ] S3-07: nạp một bài mẫu từ dữ liệu và vẽ qua interface trong `Core`
 - [ ] S2-18: SUS bản tiếng Việt và mẫu pre/post test
 
 **Nghiên cứu**

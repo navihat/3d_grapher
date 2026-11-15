@@ -87,6 +87,7 @@ No code yet, so no functional testing this week.
 - [ ] S2-11, S2-10: curve y = f(x) with shaded region; solid of revolution about the x-axis
 - [ ] S2-13: attach the graph and the solid to Duy's target, run on Android
 - [ ] S2-25: learning-theory justification for the new direction
+- [ ] S3-05, S3-06: 50 parser tests with domain check; discontinuities and in-place mesh updates
 
 **Duy – Tracking and marker**
 
@@ -94,12 +95,14 @@ No code yet, so no functional testing this week.
 - [ ] S2-02, S2-03: worksheet marker v1 with printed axes, 4–5 stars; print and measure tracking
 - [ ] S2-04, S2-05: `GraphRoot` aligned with the printed axes; Extended Tracking
 - [ ] S2-06: Main and Sandbox scenes; APK running on 2 Android phones
+- [ ] S3-04: measure and correct the offset between AR axes and printed axes
 
 **Hùng – Exercises and UI**
 
 - [ ] S2-14, S2-15: learning objectives; function set with bounds and 3–4 POE exercises
 - [ ] S2-16, S2-17: 4-screen wireframe in Figma; Ideate part of the FigJam board
 - [ ] S3-01: exercise data structure (ScriptableObject)
+- [ ] S3-07: load a sample exercise from data and plot it through the `Core` interface
 - [ ] S2-18: Vietnamese SUS and pre/post test templates
 
 **Research**
