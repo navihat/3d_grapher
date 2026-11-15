@@ -38,4 +38,4 @@ Tiếp nối [biên bản 08/11](2026-11-08_hop-nhom_huong-bai-tap-ar.md). Thay 
 - [ ] Viết lại lập luận lý thuyết học tập (S2-25) — Thái — 2026-11-13
 - [ ] Đổi prototype tuần 2 từ mặt z = x² + y² sang đồ thị + khối tròn xoay — <bổ sung> — 2026-11-15
 - [ ] Chọn bộ hàm và soạn bài tập — <bổ sung> — <bổ sung>
-- [ ] Sửa kế hoạch và lộ trình sprint sau khi GV xác nhận — <bổ sung> — <bổ sung>
+- [x] Sửa kế hoạch và lộ trình sprint — Thái — 2026-11-16 (sửa trước khi GV xác nhận để làm bù tuần 2; sửa lại nếu GV yêu cầu khác)

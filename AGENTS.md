@@ -23,7 +23,7 @@ Docs/planning/     đề tài, phân tích, kế hoạch 8 tuần
 | --- | --- | --- |
 | `Core/` | cả nhóm | interface chung giữa các module |
 | `Tracking/` | Duy | Vuforia, gốc tọa độ theo target, extended tracking |
-| `Graphing/` | Thái | parser, đường cong 2D, mặt 3D, shader |
+| `Graphing/` | Thái | parser, đường cong 2D, khối tròn xoay, shader |
 | `Exercises/`, `UI/` | Hùng | luồng POE, chấm điểm, bàn phím toán, thanh trượt |
 
 Chiều phụ thuộc (asmdef): `Core ← Tracking, Graphing ← Exercises, UI`. Không thêm tham chiếu ngược chiều.

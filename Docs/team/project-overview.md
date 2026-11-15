@@ -4,7 +4,7 @@
 
 ## Mục tiêu
 
-Học sinh THPT lớp 10–12 quét phiếu bài tập bằng điện thoại, thấy đồ thị hàm số (đường cong 2D và mặt 3D) nổi đúng trên hệ trục in sẵn, rồi làm bài theo chu trình Dự đoán – Quan sát – Giải thích. Chi tiết đề bài, lý thuyết học tập và kế hoạch: `Docs/planning/`.
+Học sinh lớp 12 quét phiếu bài tập bằng điện thoại, thấy đồ thị y = f(x) và khối tròn xoay quanh Ox nổi đúng trên hệ trục in sẵn (hướng 10/11, chờ giảng viên xác nhận), rồi làm bài theo chu trình Dự đoán – Quan sát – Giải thích. Chi tiết đề bài, lý thuyết học tập và kế hoạch: `Docs/planning/`.
 
 ## Kiến trúc
 
@@ -39,7 +39,7 @@ Mỗi module có một assembly definition (`Grapher.Core`, `Grapher.Tracking`, 
 
 1. Camera chụp khung hình → Vuforia nhận ra phiếu → cập nhật vị trí ImageTarget.
 2. Exercises đọc dữ liệu bài (ScriptableObject: target ID, hàm mặc định, câu hỏi, đáp án).
-3. Graphing biên dịch biểu thức một lần, sinh lưới 60×60–100×100 đỉnh; kéo thanh trượt chỉ cập nhật vị trí đỉnh.
+3. Graphing biên dịch biểu thức một lần, sinh đường cong, miền tô và lưới khối tròn xoay; kéo thanh trượt chỉ cập nhật vị trí đỉnh.
 4. Exercises chạy POE: dự đoán → hiện đồ thị → hỏi → chấm, ghi log JSON cục bộ.
 
 ## Scene

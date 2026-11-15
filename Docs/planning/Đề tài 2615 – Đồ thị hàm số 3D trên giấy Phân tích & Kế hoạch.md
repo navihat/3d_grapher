@@ -1,6 +1,8 @@
 # Đề tài 2615 – Đồ thị hàm số 3D trên giấy: Phân tích & Kế hoạch
 
-Oct 28, 2026 · @Trương Văn Thái · Cập nhật 08/11/2026: kế hoạch 8 tuần, OCR thành tính năng thêm; bỏ thử nghiệm ở trường THPT và build iPhone, đánh giá với 5–10 bạn cùng lớp; tuần 2 thêm phần nghiên cứu (mục tiêu học tập, lý thuyết học tập) · Cập nhật 09/11/2026: hạn nộp 13h30 ngày 23/12/2026
+Oct 28, 2026 · @Trương Văn Thái · Cập nhật 08/11/2026: kế hoạch 8 tuần, OCR thành tính năng thêm; bỏ thử nghiệm ở trường THPT và build iPhone, đánh giá với 5–10 bạn cùng lớp; tuần 2 thêm phần nghiên cứu (mục tiêu học tập, lý thuyết học tập) · Cập nhật 09/11/2026: hạn nộp 13h30 ngày 23/12/2026 · Cập nhật 16/11/2026: chuyển sang hướng thể tích khối tròn xoay theo họp nhóm 10/11 (chờ giảng viên xác nhận)
+
+> **Hướng bài học từ 10/11 (chưa chốt, chờ giảng viên xác nhận phạm vi):** học sinh lớp 12, SGK Toán 12 KNTT tập 2, Bài 13 – Ứng dụng hình học của tích phân. Marker neo hệ trục in trên phiếu; app vẽ y = f(x) trên [a, b], tô miền giữa đồ thị và Ox, dựng khối tròn xoay quanh Ox nổi lên khỏi trang giấy; học sinh tự lập V = π∫f(x)²dx theo khung POE. Mặt z = f(x, y), miền giữa hai đồ thị, nhiều trục quay và OCR nằm ngoài MVP. Chi tiết: [biên bản 10/11](../decisions/2026-11-10_hop-nhom_the-tich-khoi-tron-xoay.md). Nếu giảng viên không đồng ý, các mục 2, 3, 5.3 và 6 phải sửa lại.
 
 ## 1. Đề bài 2615 tóm tắt
 
@@ -28,12 +30,12 @@ Yêu cầu chung bắt buộc cho mọi đề (nguyên văn):
 
 | # | Điểm chưa rõ | Câu hỏi cụ thể | Đề xuất đã quyết định | Hỏi GV? |
 | --- | --- | --- | --- | --- |
-| 1 | Đối tượng và nội dung Toán | Lớp mấy? Hàm một biến (y = f(x)) hay hai biến (z = f(x,y))? Có mặt tham số, mặt phẳng, mặt cầu không? | THPT lớp 10–12 (hàm bậc 2, bậc 3, khảo sát hàm số lớp 12, phương trình mặt phẳng/mặt cầu Oxyz lớp 12, hàm lượng giác) | Không |
-| 2 | "Input equations" nhập bằng cách nào | Gõ trên app, chọn từ danh sách, hay đọc từ giấy (OCR)? | Gõ trên app + thanh trượt tham số; OCR là tính năng nâng cao | Không |
-| 3 | Một marker hay nhiều marker | Cả phiếu một target, hay mỗi bài tập một target? | Mỗi bài tập một target, gắn sẵn hàm mặc định | Không |
+| 1 | Đối tượng và nội dung Toán | Lớp mấy? Hàm một biến (y = f(x)) hay hai biến (z = f(x,y))? Có mặt tham số, mặt phẳng, mặt cầu không? | Lớp 12, Bài 13 – Ứng dụng hình học của tích phân (SGK Toán 12 KNTT tập 2): hàm một biến y = f(x) ≥ 0 trên [a, b], khối tròn xoay quanh Ox; không dùng toàn hàm bậc nhất, có √x, sin x trên [0, π] | Có |
+| 2 | "Input equations" nhập bằng cách nào | Gõ trên app, chọn từ danh sách, hay đọc từ giấy (OCR)? | MVP: chọn hoặc sửa hệ số trong danh sách hàm có sẵn; gõ tự do để sau Gate 2; OCR là tính năng nâng cao | Không |
+| 3 | Một marker hay nhiều marker | Cả phiếu một target, hay mỗi bài tập một target? | MVP: một marker neo hệ trục; mỗi bài tập một target nếu kịp | Không |
 | 4 | Đồ thị "above the page" đặt thế nào | Gốc tọa độ ở đâu? Đơn vị trục bằng bao nhiêu cm trên giấy? | In hệ trục lên phiếu, 1 đơn vị có thể tùy chỉnh (mặc định 1 đơn vị = 1 cm), đồ thị AR trùng hình in, có gốc tọa độ, hệ trục tọa độ | Không |
-| 5 | "Guided exercises" gồm những gì | Bao nhiêu bài? Có chấm điểm tự động không? Có gợi ý từng bước không? | 6–8 bài, mỗi bài: dự đoán → xem đồ thị → trả lời câu hỏi, có chấm tự động \<Tự xây kịch bản sư phạm và kịch bản AR → sau đó sẽ hỏi thầy> | Có |
-| 6 | Mức "2D/3D" | Phải có cả hai, hay 3D là chính? | Cả hai: đường cong 2D dựng đứng trên trang + mặt cong 3D | Không |
+| 5 | "Guided exercises" gồm những gì | Bao nhiêu bài? Có chấm điểm tự động không? Có gợi ý từng bước không? | 3–4 bài, từ nhận diện miền đến phát hiện lỗi; mỗi bài: xem đồ thị và miền → dự đoán khối → xem khối → lập tích phân, nộp đáp số; chấm tự động, chỉ ra bước sai \<Tự xây kịch bản sư phạm và kịch bản AR → sau đó sẽ hỏi thầy> | Có |
+| 6 | Mức "2D/3D" | Phải có cả hai, hay 3D là chính? | Cả hai: đường cong 2D và miền phẳng trùng hệ trục in + khối tròn xoay 3D nổi trên trang | Không |
 | 7 | Công nghệ bắt buộc hay gợi ý | "Minimum technical requirements" có bắt buộc Unity + Vuforia không? Được làm bản web (MindAR.js + Three.js) không? | Làm Unity + Vuforia; bản web chỉ là phương án dự phòng | Không |
 | 8 | Thiết kế đánh giá | Pre/post quiz có cần nhóm đối chứng (học bằng giấy/GeoGebra) không? 5–10 người có phải là học sinh không? | Một nhóm, pre/post + SUS, 5–10 người dùng là bạn cùng lớp; không thử nghiệm ở trường THPT (ngoài phạm vi môn học) | Không |
 | 9 | Sản phẩm nộp | Nộp APK, video demo, báo cáo, mã nguồn? Định dạng báo cáo? Tiêu chí chấm? | APK + video + báo cáo + repo GitHub | Không |
@@ -50,21 +52,22 @@ Rủi ro lớn nhất là marker nhận diện kém: một dự án Unity + Vufo
 | Tay che marker khi thao tác | Mất tracking, đồ thị biến mất | Bật Device Pose Observer / Extended Tracking để giữ đồ thị khi marker bị che ([Vuforia Image Targets](https://developer.vuforia.com/library/objects/image-targets)) |
 | Khớp hệ trục AR với hệ trục in | Sai tỉ lệ thì đồ thị AR không trùng hình in | Nhập đúng chiều rộng thật của target (mét); đặt gốc O tại vị trí cố định trên phiếu; quy ước 1 đơn vị = 1–2 cm |
 | Đọc biểu thức người dùng gõ | Viết tắt kiểu giáo khoa: 2x, sin x, x²; lỗi thứ tự ưu tiên (một số parser tính -2^2 = 4) | Bước tiền xử lý chuẩn hóa (thêm dấu nhân ngầm, ngoặc cho hàm); bộ test đơn vị cho 30–50 biểu thức; báo lỗi cú pháp bằng tiếng Việt |
-| Giá trị vô hạn, không xác định | 1/x, tan x, √(x) âm, ln x ≤ 0 sinh NaN/∞, lưới bị kéo dài | Kẹp z trong khoảng hiển thị; bỏ tam giác có đỉnh NaN; cắt đường cong tại điểm gián đoạn |
-| Hiệu năng sinh lưới | Kéo thanh trượt tham số phải tính lại toàn bộ lưới | Lưới 60×60 đến 100×100 điểm; biên dịch biểu thức thành delegate một lần; chỉ cập nhật vị trí đỉnh, không tạo mesh mới |
-| Hiển thị mặt cong dễ đọc | Mặt một màu khó nhìn độ cao; mặt sau bị ẩn; ánh sáng nhiều đồ thị ảnh hưởng nhau | Tô màu theo độ cao + đường đồng mức; shader hai mặt; mỗi đồ thị một layer ánh sáng |
-| Gõ công thức trên điện thoại | Bàn phím mặc định thiếu ^, √, π | Bàn phím toán riêng (giống máy tính Casio) + hàm mẫu chọn nhanh |
+| Giá trị vô hạn, không xác định | 1/x, tan x, √(x) âm, ln x ≤ 0 sinh NaN/∞, lưới bị kéo dài | MVP chỉ nhận f(x) ≥ 0 xác định trên [a, b]; bỏ tam giác có đỉnh NaN; cắt đường cong tại điểm gián đoạn |
+| Hiệu năng sinh lưới | Kéo thanh trượt (số đĩa n, hệ số) phải tính lại toàn bộ lưới | Giới hạn số lát theo x và số múi quanh trục, đo trên máy thật; biên dịch biểu thức thành delegate một lần; chỉ cập nhật vị trí đỉnh, không tạo mesh mới |
+| Hiển thị khối dễ đọc | Khối đặc che mất đồ thị và miền phẳng bên dưới; mặt trong bị ẩn; khó phân biệt từng đĩa | Khối bán trong suốt; viền từng đĩa; shader hai mặt |
+| Gõ công thức trên điện thoại | Bàn phím mặc định thiếu ^, √, π | MVP: chọn hàm từ danh sách và sửa hệ số; bàn phím toán riêng (giống máy tính Casio) để nhập đáp số; nhập hàm tự do để sau Gate 2 |
 | Build iPhone | Unity cần Mac + Xcode để build iOS | Chỉ build Android; iPhone ngoài phạm vi |
 
 ### 3.2 Sư phạm và đánh giá
 
 | Vấn đề | Hướng giải quyết |
 | --- | --- |
-| AR chỉ gây "wow", không có ích học tập | Mỗi bài theo chu trình Dự đoán – Quan sát – Giải thích (POE): học sinh đoán hình dạng trước, xem đồ thị, rồi trả lời câu hỏi |
-| Đồ thị 3D ngoài chương trình THPT | Lõi bám chương trình Toán 12 (khảo sát hàm số, mặt phẳng và mặt cầu trong Oxyz); z = f(x,y) là phần mở rộng |
+| AR chỉ gây "wow", không có ích học tập | Mỗi bài theo chu trình Dự đoán – Quan sát – Giải thích (POE): học sinh đoán khối tạo thành trước, xem khối, rồi tự lập tích phân; tương tác chính là chồng n đĩa mỏng, kéo thanh trượt tăng n đến khi khớp khối, để trả lời "vì sao tích phân là thể tích" |
+| Đồ thị 3D ngoài chương trình THPT | Lõi bám Bài 13 Toán 12 (thể tích khối tròn xoay quanh Ox); z = f(x,y) ngoài MVP |
+| Câu hỏi "khác GeoGebra 3D ở đâu" | Chuẩn bị câu trả lời trước buổi báo cáo: gắn với phiếu giấy, bài tập POE có chấm và chỉ ra bước sai |
 | Thiếu nhóm đối chứng | Thiết kế một nhóm pre/post; ghi rõ hạn chế trong báo cáo; nếu đủ người thì so sánh với nhóm học bằng giấy hoặc GeoGebra 2D |
 | Người tham gia đánh giá không phải học sinh THPT | Đánh giá với bạn cùng lớp; ghi rõ hạn chế này trong báo cáo; không thu thập thông tin cá nhân |
-| Công cụ đo | Pre/post test 8–10 câu về liên hệ tham số – hình dạng; SUS bản tiếng Việt; 2–3 câu hỏi mở |
+| Công cụ đo | Pre/post test 8–10 câu về xác định miền quay, nhận ra khối, lập tích phân thể tích; người thử đã học tích phân nên phải có câu đủ khó để không đạt điểm tối đa ngay từ đầu; SUS bản tiếng Việt; 2–3 câu hỏi mở |
 
 ## 4. Tech stack và thư viện
 
@@ -75,10 +78,10 @@ Lõi dùng Unity + Vuforia theo đúng đề, parser NCalc (MIT) và Mesh API c�
 | Engine | Unity bản LTS mới nhất được Vuforia hỗ trợ | — | Kiểm tra bảng tương thích Unity–Vuforia trước khi cài |
 | AR tracking | [Vuforia Engine](https://developer.vuforia.com/library/objects/image-targets), image target, giấy phép Basic miễn phí | Instant image target (tạo target ngay trong Unity Editor) | Có Device Pose Observer cho Extended Tracking |
 | Đọc biểu thức | [NCalc](https://github.com/ncalc/ncalc): MIT, .NET Standard 2.0, biên dịch thành lambda | [mXparser](https://mathparser.org/mxparser-license/): nhiều hàm toán, miễn phí cho giáo dục, thương mại phải trả phí; hoặc tự viết (shunting-yard) | Tránh [codewriter Expression Parser](https://github.com/codewriter-packages/Expression-Parser/blob/main/README.md): không có sin/cos và tính -2^2 = 4 |
-| Sinh mặt cong | Unity Mesh API, lưới đỉnh + tam giác | Point graph theo [Catlike Coding](https://catlikecoding.com/unity/tutorials/basics/mathematical-surfaces/) | Tutorial có sẵn mặt, mặt cầu, morphing theo tham số |
+| Sinh khối tròn xoay và đĩa mỏng | Unity Mesh API, quay đường y = f(x) quanh Ox thành lưới đỉnh + tam giác | Point graph theo [Catlike Coding](https://catlikecoding.com/unity/tutorials/basics/mathematical-surfaces/) | Tutorial có sẵn mặt, mặt cầu, morphing theo tham số |
 | Đường cong 2D, hệ trục | LineRenderer | Mesh dạng ống | Nhãn trục dùng TextMeshPro |
 | Giao diện | uGUI + bàn phím toán tự làm, thanh trượt tham số | UI Toolkit | — |
-| Bài tập, chấm điểm | ScriptableObject hoặc JSON mô tả bài | — | Mỗi bài: target ID, hàm mặc định, câu hỏi, đáp án |
+| Bài tập, chấm điểm | ScriptableObject hoặc JSON mô tả bài | — | Mỗi bài: target ID, hàm mặc định, cận a và b, câu hỏi, đáp án |
 | Ghi log học tập | File JSON cục bộ | Firebase | Dùng cho phân tích thời gian, số lần thử |
 | AI nâng cao: OCR công thức (tính năng thêm) | [pix2tex (LaTeX-OCR)](https://github.com/lukas-blecher/LaTeX-OCR): ViT + Transformer, MIT, có API và Docker | Pix2Text, Mathpix (trả phí) | Chỉ làm sau Gate 2 nếu lõi ổn; chạy trên FastAPI/Docker; viết tay mới hỗ trợ một phần; cần bước chuyển LaTeX sang biểu thức |
 | Bản web dự phòng | [MindAR.js](https://github.com/webarkit/mind-ar-js) (MIT) + Three.js + math.js | AR.js | Chạy cả iOS và Android qua trình duyệt, cần HTTPS |
@@ -88,7 +91,7 @@ Lõi dùng Unity + Vuforia theo đúng đề, parser NCalc (MIT) và Mesh API c�
 
 ## 5. Dự án và nghiên cứu đã có
 
-Đã có ít nhất một dự án Unity + Vuforia làm gần đúng ý tưởng này, nhưng chỉ dùng vài hàm có sẵn. Khoảng trống 2615 có thể lấp là: nhập hàm tùy ý, bài tập có hướng dẫn theo chương trình Việt Nam, và đọc công thức từ giấy.
+Đã có ít nhất một dự án Unity + Vuforia làm gần đúng ý tưởng này, nhưng chỉ dùng vài hàm có sẵn. Khoảng trống 2615 có thể lấp là: bài tập có hướng dẫn theo chương trình Việt Nam (thể tích khối tròn xoay, Toán 12) gắn với phiếu giấy; nhập hàm tùy ý và đọc công thức từ giấy là phần mở rộng.
 
 ### 5.1 Dự án tham khảo
 
@@ -109,7 +112,7 @@ Lõi dùng Unity + Vuforia theo đúng đề, parser NCalc (MIT) và Mesh API c�
 
 ### 5.3 Lý thuyết học tập nền
 
-- **Đa biểu diễn (Ainsworth):** phương trình, đồ thị 2D in và mặt 3D AR bổ sung cho nhau; học sinh học cách chuyển đổi giữa các biểu diễn.
+- **Đa biểu diễn (Ainsworth):** công thức tích phân, đồ thị 2D và miền in trên phiếu, khối tròn xoay 3D trong AR bổ sung cho nhau; học sinh học cách chuyển đổi giữa các biểu diễn.
 - **Học đa phương tiện và mã hóa kép (Mayer, Paivio):** chữ và hình đặt sát nhau (nguyên tắc liền kề không gian) — đồ thị nổi ngay trên đề bài.
 - **Dự đoán – Quan sát – Giải thích (POE):** cấu trúc cho mỗi bài tập có hướng dẫn.
 
@@ -124,17 +127,17 @@ Dự án chạy 8 tuần, từ 02/11 đến 23/12/2026, nộp toàn bộ sản p
 | Tuần | Ngày | Giai đoạn | Đầu ra chính | Gate |
 | --- | --- | --- | --- | --- |
 | 1 | 02–08/11 | Đăng ký, khởi tạo | Đăng ký đề; gửi câu hỏi ở mục 2; tạo project Unity + repo; cấu trúc thư mục và quy ước nhóm | |
-| 2 | 09–15/11 | Prototype + nghiên cứu | Đọc lại 3 bài nghiên cứu và 4 dự án; viết mục tiêu học tập và lập luận lý thuyết học tập; chọn 6–8 hàm theo SGK Toán 12; app thử 1 target + mặt z = x² + y² chạy trên máy thật; phiếu bài tập bản 1 đạt 4–5 sao | **Gate 1 (15/11):** marker tracking ổn định |
-| 3 | 16–22/11 | Xây lõi (1) | Parser + bộ test; vẽ đường cong 2D và mặt 3D, tô màu theo độ cao; khớp hệ trục AR với hệ trục in; cấu trúc dữ liệu bài tập | |
-| 4 | 23–29/11 | Xây lõi (2) | Thanh trượt tham số; bàn phím toán; nhiều target; luồng POE và chấm điểm; ghi log | |
+| 2 | 09–15/11 | Prototype + nghiên cứu | Đọc lại 3 bài nghiên cứu và 4 dự án; viết mục tiêu học tập và lập luận lý thuyết học tập; chọn bộ hàm theo SGK Toán 12 Bài 13; app thử 1 target + đồ thị y = f(x) và khối tròn xoay chạy trên máy thật; phiếu bài tập bản 1 đạt 4–5 sao | Gate 1 trượt, dời sang 22/11 |
+| 3 | 16–22/11 | Xây lõi (1) | Làm bù việc tuần 2 còn dở; parser + bộ test; vẽ đường cong y = f(x), tô miền, dựng khối tròn xoay quanh Ox; khớp hệ trục AR với hệ trục in; cấu trúc dữ liệu bài tập | **Gate 1 (22/11):** marker tracking ổn định |
+| 4 | 23–29/11 | Xây lõi (2) | Chồng n đĩa mỏng với thanh trượt n; chọn và sửa hệ số hàm; bàn phím toán nhập đáp số; nhiều target nếu kịp; luồng POE và chấm điểm chỉ ra bước sai; ghi log | |
 | 5 | 30/11–06/12 | Ghép và hoàn thiện lõi | Ghép 3 phần vào Main scene; Extended Tracking; bản nháp nội dung bài tập và bộ câu hỏi pre/post | **Gate 2 (06/12):** chốt tính năng lõi |
-| 6 | 07–13/12 | Nội dung và thử nội bộ | Đủ 6–8 bài theo POE; in phiếu chính thức; chạy thử với 2 người để sửa lỗi; OCR (pix2tex + FastAPI) chỉ khi lõi đã ổn | **Gate 3 (13/12):** app sẵn sàng thử nghiệm |
+| 6 | 07–13/12 | Nội dung và thử nội bộ | Đủ 3–4 bài theo POE; in phiếu chính thức; chạy thử với 2 người để sửa lỗi; nhập hàm tự do và OCR (pix2tex + FastAPI) chỉ khi lõi đã ổn | **Gate 3 (13/12):** app sẵn sàng thử nghiệm |
 | 7 | 14–20/12 | Thử nghiệm | Pre-test → học với app 30–45 phút → post-test + SUS + phỏng vấn ngắn với 5–10 bạn cùng lớp | |
 | 8 | 21–23/12 | Báo cáo và nộp | Phân tích số liệu; viết báo cáo; quay video demo; chuẩn bị slide; nộp trước 13h30 23/12 | |
 
 Hành động tại mỗi gate:
 
-- **Gate 1:** nếu đến 15/11 marker vẫn tracking kém, đổi thiết kế phiếu hoặc chuyển sang bản web dự phòng.
+- **Gate 1:** nếu đến 22/11 marker vẫn tracking kém, đổi thiết kế phiếu hoặc chuyển sang bản web dự phòng.
 - **Gate 2:** tính năng nào chưa xong thì cắt, không lùi lịch; từ đây chỉ sửa lỗi và thêm nội dung.
 - **Gate 3:** nếu app chưa ổn định, giảm số bài dùng trong buổi thử nghiệm thay vì lùi buổi thử nghiệm.
 
@@ -151,8 +154,8 @@ Hành động tại mỗi gate:
 | Thành viên | Phần AR phụ trách (đầu cuối) | Việc phụ (nội dung + đánh giá) | Đầu ra demo được |
 | --- | --- | --- | --- |
 | Duy – Tracking và marker | Cài Vuforia; thiết kế và test phiếu/marker đạt 4–5 sao; nhiều target, mỗi bài một target; khớp hệ trục AR với hệ trục in; Extended Tracking; build APK | Tuyển 5–10 bạn cùng lớp tham gia đánh giá | Quét phiếu bất kỳ, hệ trục AR hiện đúng vị trí, không mất khi che tay |
-| Thái – Vẽ đồ thị trong AR + AI | Parser; sinh đường cong 2D và mặt 3D trên marker; tô màu theo độ cao; xử lý gián đoạn; thanh trượt tham số cập nhật thời gian thực; OCR công thức (tính năng thêm, sau lõi) | Lập luận lý thuyết học tập; ghi log sự kiện, xử lý số liệu pre/post và SUS | Nhập hàm bất kỳ → đồ thị nổi trên giấy; kéo tham số thấy đồ thị đổi |
-| Hùng – Bài tập AR và tương tác | Luồng bài tập POE trong AR (dự đoán → quan sát → trả lời); chạm chọn điểm trên đồ thị (raycast); gợi ý theo bậc; chấm điểm bằng luật; bàn phím toán và UI | Mục tiêu học tập; soạn nội dung bài tập và bộ câu hỏi pre/post; chủ trì buổi thử nghiệm | Làm trọn một bài tập trong AR, có điểm và phản hồi |
+| Thái – Vẽ đồ thị trong AR + AI | Parser; sinh đường cong y = f(x), tô miền và dựng khối tròn xoay quanh Ox trên marker; chồng n đĩa mỏng; xử lý gián đoạn; thanh trượt cập nhật thời gian thực; OCR công thức (tính năng thêm, sau lõi) | Lập luận lý thuyết học tập; ghi log sự kiện, xử lý số liệu pre/post và SUS | Chọn hàm → đồ thị và khối tròn xoay nổi trên giấy; kéo n thấy chồng đĩa khớp dần với khối |
+| Hùng – Bài tập AR và tương tác | Luồng bài tập POE trong AR (dự đoán → quan sát → trả lời); chạm chọn điểm trên đồ thị (raycast); gợi ý theo bậc; chấm điểm bằng luật, chỉ ra bước sai (quên bình phương, quên π, sai cận); bàn phím toán và UI | Mục tiêu học tập; soạn nội dung bài tập và bộ câu hỏi pre/post; chủ trì buổi thử nghiệm | Làm trọn một bài tập trong AR, có điểm và phản hồi |
 
 Cả 3 người đều làm một phần AR chạy trên điện thoại, khoảng 80–85% thời gian. Việc nội dung và đánh giá chia đều, mỗi người khoảng 15–20%; cả nhóm cùng có mặt buổi thử nghiệm. Mỗi người viết chương báo cáo về phần mình làm và review code của người khác hàng tuần. Ba phần ghép qua giao diện chung: Duy cung cấp gốc tọa độ theo target, Thái cung cấp hàm vẽ đồ thị, Hùng gọi cả hai trong bài tập.
 
