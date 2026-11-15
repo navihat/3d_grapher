@@ -1,6 +1,6 @@
 # Sprint 3 — 16/11 – 22/11/2026
 
-**Mục tiêu sprint:** làm bù toàn bộ sprint 2 — quét phiếu in v1 bằng điện thoại Android, đồ thị y = f(x) và khối tròn xoay quanh Ox nổi đúng trên hệ trục in, không biến mất khi tay che một góc phiếu; có mục tiêu học tập, lập luận lý thuyết học tập và bộ bài POE theo hướng thể tích khối tròn xoay.
+**Mục tiêu sprint:** làm bù toàn bộ sprint 2 và làm việc của sprint 3 trong cùng một tuần (khối lượng gấp đôi, nhóm đã chấp nhận) — quét phiếu in v1 bằng điện thoại Android, đồ thị y = f(x) và khối tròn xoay quanh Ox nổi đúng trên hệ trục in, không biến mất khi tay che một góc phiếu; có mục tiêu học tập, lập luận lý thuyết học tập và bộ bài POE theo hướng thể tích khối tròn xoay.
 
 **Gate 1 (dời từ 15/11 sang CN 22/11):** marker tracking ổn định. Đạt khi cả 4 điều sau đúng trên máy thật:
 
@@ -11,9 +11,9 @@
 
 Trượt Gate 1 lần nữa → đổi thiết kế phiếu ngay đầu sprint 4; nếu vẫn kém, chuyển sang bản web dự phòng (MindAR.js).
 
-Hiện trạng đầu sprint (16/11): sprint 2 chưa có việc nào xong; `main` chưa có Vuforia, NCalc, `Assets/_Project/`. Hướng bài học đổi sang thể tích khối tròn xoay ([biên bản 10/11](../decisions/2026-11-10_hop-nhom_the-tich-khoi-tron-xoay.md)), chờ giảng viên xác nhận. Việc chuyển từ sprint 2 giữ nguyên mã `S2-xx`; việc mới mang mã `S3-xx`. Bỏ S2-12 (tô màu theo độ cao) vì hướng mới không cần.
+Hiện trạng đầu sprint (16/11): sprint 2 chưa có việc nào xong; `main` chưa có Vuforia, NCalc, `Assets/_Project/`. Hướng bài học đổi sang thể tích khối tròn xoay ([biên bản 10/11](../decisions/2026-11-10_hop-nhom_the-tich-khoi-tron-xoay.md)), chờ giảng viên xác nhận. Việc được tách làm hai phần: phần A là việc của sprint 2 làm bù, giữ mã `S2-xx`; phần B là việc của sprint 3, mang mã `S3-xx`. Bỏ S2-12 (tô màu theo độ cao) vì hướng mới không cần.
 
-## Việc
+## Phần A — Làm bù sprint 2 (mã S2)
 
 ### Duy — Tracking và marker
 
@@ -47,7 +47,6 @@ Hiện trạng đầu sprint (16/11): sprint 2 chưa có việc nào xong; `main
 | S2-17 | Hoàn thiện FigJam phần Ideate | Link FigJam đưa vào báo cáo tuần 3 | T3 17/11 | | ⬜ |
 | S2-15 | Chốt bộ hàm theo SGK Toán 12 Bài 13 + 3–4 bài POE (không dùng toàn hàm bậc nhất) | Danh sách hàm và cận [a, b], mỗi bài có câu dự đoán và câu hỏi giải thích; ghi vào `DECISIONS.md` | T4 18/11 | | ⬜ |
 | S2-16 | Thiết kế UI trên Figma: chọn hàm và sửa hệ số, thanh trượt số đĩa n, ô nhập đáp số | Wireframe 4 màn hình: quét phiếu → xem đồ thị và miền → dự đoán và xem khối → lập tích phân, nộp đáp số | T6 20/11 | | ⬜ |
-| S3-01 | Cấu trúc dữ liệu bài tập (ScriptableObject) | Một bài mẫu có target ID, hàm, cận a và b, câu hỏi, đáp án; có test đọc dữ liệu | T7 21/11 | | ⬜ |
 | S2-18 | Thu thập SUS bản tiếng Việt và mẫu pre/post test | File lưu trên Drive nhóm | CN 22/11 | | ⬜ |
 
 ### Nghiên cứu
@@ -61,9 +60,38 @@ Hiện trạng đầu sprint (16/11): sprint 2 chưa có việc nào xong; `main
 
 | # | Việc | Người chính | Xong khi | Hạn | Trạng thái |
 | --- | --- | --- | --- | --- | --- |
+| S2-21 | Review và chốt các file "bản nháp" trong `Docs/team/`, điền `team-contract.md` | Cả nhóm | Bỏ dòng "Bản nháp"; cả 3 người ký xác nhận | CN 22/11 | ⬜ |
+
+## Phần B — Việc sprint 3 (mã S3)
+
+Theo lộ trình sprint 3: parser + bộ test; đường cong, miền và khối tròn xoay hoàn chỉnh; khớp hệ trục AR với hệ trục in; cấu trúc dữ liệu bài tập. Các việc này nối tiếp bản prototype của phần A.
+
+### Duy — Tracking và marker
+
+| # | Việc | Xong khi | Hạn | Issue | Trạng thái |
+| --- | --- | --- | --- | --- | --- |
+| S3-04 | Khớp hệ trục AR với hệ trục in: đo độ lệch tại gốc O và 4 điểm trên hai trục, ở 3 góc nhìn; chỉnh `GraphRoot` | Bảng đo, lệch không quá 2–3 mm khi nhìn thẳng (sau S2-04) | T7 21/11 | | ⬜ |
+
+### Thái — Vẽ đồ thị
+
+| # | Việc | Xong khi | Hạn | Issue | Trạng thái |
+| --- | --- | --- | --- | --- | --- |
+| S3-05 | Mở rộng bộ test parser lên 50 biểu thức; kiểm tra miền: f xác định và f(x) ≥ 0 trên [a, b] | 50 test chạy xanh; hàm không hợp lệ trên [a, b] trả thông báo tiếng Việt (sau S2-09) | T6 20/11 | | ⬜ |
+| S3-06 | Cắt đường cong tại điểm gián đoạn; đổi hệ số hoặc cận thì chỉ cập nhật vị trí đỉnh của đường cong, miền và khối, không tạo mesh mới | Đổi hệ số trong Sandbox thấy hình cập nhật ngay; đo thời gian cập nhật trên máy thật (sau S2-10, S2-11) | CN 22/11 | | ⬜ |
+
+### Hùng — Bài tập và UI
+
+| # | Việc | Xong khi | Hạn | Issue | Trạng thái |
+| --- | --- | --- | --- | --- | --- |
+| S3-01 | Cấu trúc dữ liệu bài tập (ScriptableObject) | Một bài mẫu có target ID, hàm, cận a và b, câu hỏi, đáp án; có test đọc dữ liệu | T7 21/11 | | ⬜ |
+| S3-07 | Nạp một bài mẫu từ dữ liệu và gọi vẽ qua interface trong `Core` | Mở Sandbox thấy đồ thị và khối của bài mẫu, không viết cứng hàm trong code (sau S3-01, S2-19) | CN 22/11 | | ⬜ |
+
+### Cả nhóm
+
+| # | Việc | Người chính | Xong khi | Hạn | Trạng thái |
+| --- | --- | --- | --- | --- | --- |
 | S3-02 | Hỏi giảng viên xác nhận hướng thể tích khối tròn xoay | Thái | Có câu trả lời; cập nhật `DECISIONS.md` thành đã chốt hoặc sửa lại kế hoạch | T2 16/11 (gửi) | ⬜ |
 | S3-03 | Viết và nộp báo cáo tuần 2 (kỳ 09–15/11) | Thái | Bản EN nộp tối 16/11; lưu trong `Docs/weekly_report/week2/` | T2 16/11 | ⬜ |
-| S2-21 | Review và chốt các file "bản nháp" trong `Docs/team/`, điền `team-contract.md` | Cả nhóm | Bỏ dòng "Bản nháp"; cả 3 người ký xác nhận | CN 22/11 | ⬜ |
 
 ## Lịch trong tuần
 
@@ -73,8 +101,8 @@ Hiện trạng đầu sprint (16/11): sprint 2 chưa có việc nào xong; `main
 | T3 17/11 | Marker v1 phải có số sao — dưới 4 sao thì sửa ngay; xong mục tiêu học tập (S2-14) và parser (S2-09) |
 | T4 18/11 | Cập nhật trạng thái giữa tuần; xong đo tracking (S2-03), bộ bài POE (S2-15), lập luận lý thuyết (S2-25), tóm tắt bài nghiên cứu (S2-23) |
 | T5 19/11 | `GraphRoot` và Extended Tracking (S2-04, S2-05) |
-| T6 20/11 | APK đầu tiên có gọi NCalc (S2-06); khối tròn xoay chạy trong Sandbox (S2-10) |
-| T7 21/11 | Họp tích hợp trên máy Android thật: Tracking + Graphing (S2-13) |
+| T6 20/11 | APK đầu tiên có gọi NCalc (S2-06); khối tròn xoay chạy trong Sandbox (S2-10); 50 test parser (S3-05) |
+| T7 21/11 | Họp tích hợp trên máy Android thật: Tracking + Graphing (S2-13); đo độ lệch hệ trục (S3-04); dữ liệu bài tập (S3-01) |
 | CN 22/11 | Demo Gate 1, review sprint, lập sprint 4, viết báo cáo tuần 3 |
 
 ## Rủi ro
@@ -82,7 +110,7 @@ Hiện trạng đầu sprint (16/11): sprint 2 chưa có việc nào xong; `main
 | Rủi ro | Dấu hiệu sớm | Phương án |
 | --- | --- | --- |
 | Giảng viên không đồng ý hướng khối tròn xoay | Chưa có trả lời vào T4 | Làm trước các việc không phụ thuộc hướng (S2-01 – S2-06, S2-19, S2-08, S2-09, S2-11); hỏi lại trực tiếp trên lớp |
-| Dồn hai sprint vào một tuần, không kịp Gate 1 | S2-01 hoặc S2-19 chưa xong vào T3 | Ưu tiên đường găng S2-01 → S2-02 → S2-04 → S2-13; lùi S2-07, S2-18, S2-21, S2-24 sang sprint 4 |
+| Dồn hai sprint vào một tuần, không kịp Gate 1 | S2-01 hoặc S2-19 chưa xong vào T3 | Ưu tiên phần A trước phần B, theo đường găng S2-01 → S2-02 → S2-04 → S2-13; lùi S2-07, S2-18, S2-21, S2-24 rồi S3-06, S3-07 sang sprint 4 |
 | Marker ít đặc trưng, tracking chập chờn | Dưới 4 sao vào T3 | Thêm chi tiết sắc nét ở khung viền, giảm vùng lưới lặp; thử lại ngay trong ngày |
 | Vuforia chưa hỗ trợ Unity 6000.6.4f1 | Lỗi khi import package | Kiểm tra bảng tương thích trước khi cài; nếu cần, cả nhóm đổi bản Unity và ghi vào `DECISIONS.md` |
 | NCalc không chạy trên Android (IL2CPP) | Lỗi runtime trên APK dù Editor chạy được | APK ngày T6 phải có gọi NCalc; dự phòng tự viết parser shunting-yard |
