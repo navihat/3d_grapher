@@ -1,0 +1,17 @@
+{
+    "name": "Grapher.Tracking",
+    "rootNamespace": "Grapher.Tracking",
+    "references": [
+        "Grapher.Core",
+        "VuforiaScripts"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

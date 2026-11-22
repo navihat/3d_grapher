@@ -46,6 +46,9 @@ crashlytics-buildid.txt
 *.unitypackage
 *.app
 
+# Vuforia
+[Qq][Cc][Aa][Rr]/
+
 # Agent: cài đặt cá nhân
 .claude/settings.local.json
 .agents
