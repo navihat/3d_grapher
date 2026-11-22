@@ -48,7 +48,7 @@ crashlytics-buildid.txt
 
 # Agent: cài đặt cá nhân
 .claude/settings.local.json
-
+.agents
 # Hệ điều hành
 .DS_Store
 Thumbs.db
