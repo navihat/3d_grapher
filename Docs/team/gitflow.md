@@ -38,3 +38,11 @@ Dạng Conventional Commits, tiếng Anh: `feat(graphing): add implicit multipli
 ## Git LFS
 
 Ảnh, PDF, DOCX, DLL, model, video đi qua LFS (xem `.gitattributes`). Phải chạy `git lfs install` trước commit đầu tiên. Video demo và file rất lớn để trên Google Drive, trong repo chỉ để link.
+
+Thêm loại file mới vào LFS (ví dụ `.tgz`): chạy `git lfs track "*.tgz"` **trước** khi `git add` file đó, rồi commit `.gitattributes` cùng file trong cùng PR. Không dùng `git lfs migrate` — lệnh này viết lại lịch sử.
+
+## Không viết lại lịch sử chung
+
+- Không chạy lệnh viết lại các commit đã có trên `main`: `git lfs migrate ... --everything`, `git filter-branch`, `git filter-repo`, `git rebase` qua commit của `main`. Nhánh bị viết lại sẽ mất gốc chung với `main` và không tạo được PR.
+- Không force-push lên `main`. Trên nhánh của mình chỉ dùng `git push --force-with-lease`, sau khi rebase lên `origin/main`.
+- Lỡ commit file lớn mà chưa push: báo nhóm trước khi sửa, hoặc chạy `git reset --soft origin/main`, `git lfs track "<mẫu>"`, `git add --renormalize .` rồi commit lại.
