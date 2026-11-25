@@ -1,0 +1,16 @@
+{
+    "name": "Grapher.Graphing",
+    "rootNamespace": "Grapher.Graphing",
+    "references": [
+        "Grapher.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

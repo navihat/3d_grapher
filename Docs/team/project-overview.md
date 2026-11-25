@@ -26,12 +26,14 @@ Học sinh lớp 12 quét phiếu bài tập bằng điện thoại, thấy đ�
 
 Mỗi module có một assembly definition (`Grapher.Core`, `Grapher.Tracking`, `Grapher.Graphing`, `Grapher.Exercises`, `Grapher.UI`).
 
-## Interface giữa các module (dự kiến, chốt ở tuần 2)
+## Interface giữa các module (đã chốt 25/11)
 
 | Interface | Ai cung cấp | Ai dùng | Ý nghĩa |
 | --- | --- | --- | --- |
-| Gốc tọa độ theo target | Tracking | Exercises | Transform gốc O trùng hệ trục in, kèm trạng thái tracking và target ID |
-| Vẽ đồ thị | Graphing | Exercises | Nhận biểu thức + tham số, vẽ dưới một Transform cha; báo lỗi cú pháp |
+| `ITargetOrigin` (`Core/ITargetOrigin.cs`) | Tracking | Exercises | Transform gốc O trùng hệ trục in, kèm trạng thái tracking và target ID |
+| `IGraphRenderer` (`Core/IGraphRenderer.cs`) | Graphing | Exercises | Vẽ y = f(x) trên [a, b] dưới GraphRoot, đổi cận/hệ số không tạo mesh mới, bật/tắt lớp đường cong/miền/khối; trả lỗi tiếng Việt |
+
+Exercises chỉ tham chiếu `Grapher.Core`, không gọi thẳng Tracking hay Graphing; UI tham chiếu Core và Exercises.
 
 Đồ thị là con của gốc tọa độ (`ImageTarget → GraphRoot → Surface`), nên đi theo phiếu giấy mà Graphing không cần biết gì về Vuforia.
 
