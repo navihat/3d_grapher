@@ -16,6 +16,78 @@ Mục tiêu bám theo phần "Kiến thức, kĩ năng" của Bài 13 (dùng tí
 
 **Tiêu chí đạt chung:** đúng ít nhất 4/5 câu trong bài test sau (mỗi câu ứng với một mục tiêu), trong đó phải có MT2 và MT4. Việc nhận diện đúng hình AR hoặc đọc kết quả từ ứng dụng không phải bằng chứng duy nhất.
 
+## Lập luận lý thuyết học tập
+
+Thái (S2-25) · Bản nháp chờ Hùng review
+
+**Khó khăn cần giải quyết.** Học sinh thường thuộc công thức V = π∫ₐᵇ f²(x) dx nhưng không giải thích được vì sao có π và bình phương, hay vì sao tích phân lại là thể tích. Các nghiên cứu về hiểu tích phân cho thấy học sinh làm được phép tính nhưng ít người hiểu tích phân là giới hạn của tổng các phần nhỏ (Orton, 1983; Sealey, 2014). Với khối tròn xoay còn thêm một bước khó: phải tưởng tượng được khối 3D từ một hình phẳng 2D in trên giấy. Ba lý thuyết dưới đây giải thích vì sao các tính năng của app giúp được ở chỗ này. Đây cũng là câu trả lời cho hạn chế mà tổng quan IJLTER nêu ra ([research-notes.md](research-notes.md), mục 1): nhiều app AR chỉ gây "hiệu ứng wow", không có khung sư phạm.
+
+### 1. Đa biểu diễn (Ainsworth)
+
+Ainsworth (2006) đưa ra khung DeFT, theo đó dùng nhiều biểu diễn cùng lúc có ba chức năng: **bổ sung** cho nhau (mỗi biểu diễn cho thấy điều mà biểu diễn khác không cho thấy), **ràng buộc** cách hiểu (biểu diễn quen thuộc giúp đọc biểu diễn lạ) và **xây dựng hiểu biết sâu hơn** khi người học tự nối các biểu diễn với nhau. Ainsworth cũng chỉ ra cái giá: người học phải hiểu từng biểu diễn và phải chuyển được giữa chúng; nếu không được hỗ trợ, họ thường xem từng biểu diễn riêng lẻ mà không nối lại.
+
+Bài này có bốn biểu diễn của cùng một đại lượng: công thức f(x) và tích phân, đồ thị và miền phẳng trên giấy, khối tròn xoay 3D, và tổng các đĩa mỏng.
+
+| Chức năng (Ainsworth) | Tính năng của app | Mục tiêu |
+| --- | --- | --- |
+| Bổ sung | Phiếu in giữ đồ thị 2D và miền phẳng (đọc được a, b, nghiệm); AR thêm khối 3D, cho thấy hình dạng khối mà hình phẳng không cho thấy | MT1, MT3 |
+| Ràng buộc | Khối AR mọc lên từ đúng miền phẳng in sẵn, trục Ox của khối trùng trục Ox in (Gate 1: lệch ≤ 2–3 mm), nên học sinh dùng đồ thị quen thuộc để đọc khối lạ | MT3 |
+| Xây dựng hiểu biết sâu | **Thanh chọn x:** tô cùng lúc điểm (x; f(x)) trên đồ thị và mặt cắt tròn bán kính f(x) trên khối, kèm giá trị πf²(x). Học sinh thấy bán kính mặt cắt chính là tung độ của đồ thị, từ đó giải thích được vì sao phải bình phương | MT4, MT5 |
+| Xây dựng hiểu biết sâu | **Thanh trượt n đĩa:** chồng n đĩa mỏng, đĩa thứ i có thể tích π·f(xᵢ)²·Δx; tăng n thì chồng đĩa khớp dần với khối và tổng tiến tới giá trị tích phân. Đây là cầu nối giữa tổng Riemann và công thức tích phân (Sealey, 2014) | MT4 |
+
+Để giảm cái giá chuyển đổi biểu diễn mà Ainsworth cảnh báo, app **liên kết động** các biểu diễn (kéo một thanh, mọi biểu diễn cập nhật cùng lúc) và không đưa thêm biểu diễn ngoài bốn loại trên.
+
+### 2. Học đa phương tiện (Mayer) và mã hóa kép (Paivio)
+
+Theo thuyết mã hóa kép, thông tin bằng lời và bằng hình được xử lý ở hai hệ riêng; khi cả hai hệ cùng được dùng và nối với nhau thì nhớ và hiểu tốt hơn (Paivio, 1986). Mayer (2009) xây thuyết học đa phương tiện trên ý này, cộng thêm hai giả định: mỗi kênh có sức chứa giới hạn, và người học phải chủ động chọn, sắp xếp, tích hợp thông tin. Từ đó Mayer rút ra các nguyên tắc thiết kế; app dùng những nguyên tắc sau:
+
+| Nguyên tắc (Mayer, 2009) | Nội dung | Tính năng của app |
+| --- | --- | --- |
+| Liền kề không gian | Chữ và hình liên quan đặt sát nhau | Đồ thị và khối nổi ngay trên đề bài in trên phiếu, không phải nhìn qua lại giữa sách và màn hình khác. Đây cũng là cách tránh hiệu ứng chia tách chú ý (split-attention) của thuyết tải nhận thức (Sweller và cộng sự, 1998) |
+| Liền kề thời gian | Lời và hình xuất hiện cùng lúc | Khi kéo thanh chọn x, giá trị f(x) và πf²(x) hiện ngay cạnh mặt cắt, cùng lúc mặt cắt thay đổi |
+| Báo hiệu | Làm nổi phần quan trọng | Tô màu miền phẳng; Bài 2 tô hai phần trên và dưới Ox hai màu; làm nổi mặt cắt đang chọn |
+| Mạch lạc | Bỏ chi tiết không phục vụ mục tiêu | Không có hiệu ứng trang trí, không xoay khối tự động; chỉ hiện những hình phục vụ câu hỏi của bài (ví dụ khung trụ mờ ở Bài 3 chỉ để so sánh thể tích) |
+| Phân đoạn | Chia bài thành bước do người học điều khiển nhịp | Mỗi bài đi theo bốn bước Dự đoán → Quan sát → Giải thích → Lập tích phân; học sinh tự bấm sang bước sau |
+
+### 3. Dự đoán – Quan sát – Giải thích (POE)
+
+POE do White và Gunstone (1992) đề xuất để thăm dò hiểu biết của người học: người học **dự đoán** kết quả và nêu lý do, **quan sát** điều xảy ra, rồi **giải thích** chỗ khác nhau giữa dự đoán và quan sát. Dự đoán trước buộc học sinh lộ ra quan niệm sẵn có; khi quan sát mâu thuẫn với dự đoán, học sinh có lý do để sửa quan niệm. Kearney (2004) dùng POE với video và mô phỏng trên máy tính và thấy hình thức này giúp học sinh trao đổi, xem lại quan niệm của mình; đây là trường hợp gần với app vì phần "quan sát" cũng do phần mềm đảm nhiệm.
+
+| Bước POE | Tính năng của app | Ví dụ trong bộ bài |
+| --- | --- | --- |
+| Dự đoán | 3 câu trắc nghiệm (kết quả + lý do); **app khóa hình AR cho tới khi học sinh nộp dự đoán**, để học sinh không xem rồi mới "đoán" | Bài 3: khối có hình dạng gì, thể tích khoảng bao nhiêu phần hình trụ |
+| Quan sát | Hiện khối, thanh chọn x, thanh trượt n đĩa, hình so sánh (tam giác OAB, khung trụ) | Bài 1: so độ cao đồ thị với đoạn OB tại cùng x |
+| Giải thích | Câu hỏi mở đối chiếu dự đoán với điều thấy được; chấm theo rubric Đúng / Một phần / Sai | Bài 2: vì sao ∫sin x dx = 0 mà diện tích dương |
+| Lập tích phân (bước thêm của nhóm) | Ô nhập tích phân và đáp số; app chấm và chỉ ra bước sai (quên bình phương, quên π, sai cận); không hiện đáp án trước khi nộp | Bài 3: tìm lỗi thiếu bình phương trong lời giải mẫu |
+
+Bước thứ tư được thêm vì POE gốc dừng ở giải thích, còn mục tiêu MT2, MT4 yêu cầu học sinh lập và tính được tích phân. Các lời giải "tự nhiên nhưng sai" (Bài 2: tính ∫f thay vì ∫|f|; Bài 3: thiếu bình phương) được chọn có chủ đích để dự đoán của học sinh có khả năng sai, tạo ra mâu thuẫn mà bước Quan sát giải quyết.
+
+### Tóm tắt: tính năng → lý thuyết → mục tiêu
+
+| Tính năng | Lý thuyết | Mục tiêu |
+| --- | --- | --- |
+| Đồ thị và khối AR trùng hệ trục in trên phiếu | Đa biểu diễn (ràng buộc); liền kề không gian | MT1, MT3 |
+| Tô miền, tô hai màu theo dấu f | Báo hiệu | MT1, MT2 |
+| Thanh chọn x: điểm trên đồ thị ↔ mặt cắt πf²(x) | Đa biểu diễn (xây dựng hiểu biết); liền kề thời gian | MT4, MT5 |
+| Thanh trượt n đĩa mỏng | Đa biểu diễn (tổng Riemann ↔ tích phân) | MT4 |
+| Khóa AR đến khi nộp dự đoán | POE (dự đoán) | MT3 |
+| Câu hỏi giải thích + rubric | POE (giải thích) | MT2, MT5 |
+| Chấm tích phân, chỉ ra bước sai | POE (bước lập tích phân); phản hồi theo lỗi cụ thể | MT2, MT4, MT5 |
+| Bốn bước, học sinh tự sang bước | Phân đoạn; mạch lạc | tất cả |
+
+**Giới hạn và cách kiểm chứng.** Các lý thuyết trên chỉ cho biết thiết kế có cơ sở, không chứng minh app hiệu quả. Nhóm sẽ kiểm chứng bằng bài test trước/sau theo 5 mục tiêu và thang SUS với 5–10 bạn cùng lớp (xem `DECISIONS.md`, 08/11). Mẫu nhỏ và người thử đã học tích phân, nên kết quả chỉ mang tính gợi ý; bài test cần có câu đủ khó (giải thích vì sao bình phương, phát hiện lời giải sai) để tránh đạt điểm tối đa ngay từ đầu.
+
+### Tài liệu tham khảo
+
+- Ainsworth, S. (2006). DeFT: A conceptual framework for considering learning with multiple representations. *Learning and Instruction, 16*(3), 183–198.
+- Kearney, M. (2004). Classroom use of multimedia-supported predict–observe–explain tasks in a social constructivist learning environment. *Research in Science Education, 34*(4), 427–453.
+- Mayer, R. E. (2009). *Multimedia learning* (2nd ed.). Cambridge University Press.
+- Orton, A. (1983). Students' understanding of integration. *Educational Studies in Mathematics, 14*(1), 1–18.
+- Paivio, A. (1986). *Mental representations: A dual coding approach*. Oxford University Press.
+- Sealey, V. (2014). A framework for characterizing student understanding of Riemann sums and definite integrals. *Journal of Mathematical Behavior, 33*, 230–249.
+- Sweller, J., van Merriënboer, J. J. G., & Paas, F. G. W. C. (1998). Cognitive architecture and instructional design. *Educational Psychology Review, 10*(3), 251–296.
+- White, R. T., & Gunstone, R. F. (1992). *Probing understanding*. Falmer Press.
+
 ## Cách dùng
 
 Mỗi bài đi theo bốn bước: **Dự đoán (Predict)** → **Quan sát (Observe)** → **Giải thích (Explain)** → **Lập tích phân và nộp đáp số**. Mỗi bài có 3 câu dự đoán trắc nghiệm; học sinh nộp dự đoán xong, app mới hiện hình AR. App không hiện đáp án trước khi học sinh nộp lời giải.
