@@ -1,0 +1,14 @@
+# Người review mặc định theo module (xem bảng module trong AGENTS.md).
+# Quy tắc khớp sau cùng được áp dụng.
+# navihat = Thái (Graphing), Nhoc-To = Duy (Tracking), Muteki-DLM = Hùng (Exercises, UI)
+
+*                           @navihat @Nhoc-To @Muteki-DLM
+
+/Assets/_Project/Core/      @navihat @Nhoc-To @Muteki-DLM
+/Assets/_Project/Tracking/  @Nhoc-To
+/Assets/_Project/Graphing/  @navihat
+/Assets/_Project/Exercises/ @Muteki-DLM
+/Assets/_Project/UI/        @Muteki-DLM
+
+/Assets/Plugins/            @navihat
+/Worksheets/                @Nhoc-To
