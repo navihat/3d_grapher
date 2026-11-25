@@ -58,6 +58,12 @@ namespace Grapher.Graphing.Tests
             yield return new TestCaseData("0,5x", 4.0, 2.0);
             yield return new TestCaseData("3 − 2x", 1.0, 1.0);
             yield return new TestCaseData("2 × x ÷ 4", 2.0, 1.0);
+
+            // S3-05: các hàm trong bộ bài POE (learning_design.md)
+            yield return new TestCaseData("x³", 1.5, 3.375);
+            yield return new TestCaseData("sin x", Math.PI / 2, 1.0);
+            yield return new TestCaseData("2x - x²", 0.5, 0.75);
+            yield return new TestCaseData("√(4 - x²)", 1.0, Math.Sqrt(3));
         }
 
         [TestCaseSource(nameof(ValueCases))]
