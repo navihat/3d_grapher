@@ -1,0 +1,17 @@
+{
+    "name": "Grapher.UI",
+    "rootNamespace": "Grapher.UI",
+    "references": [
+        "Grapher.Core",
+        "Grapher.Exercises"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
