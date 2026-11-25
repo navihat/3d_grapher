@@ -23,19 +23,105 @@ namespace Grapher.Graphing
         }
 
         /// <summary>
-        /// Chép các điểm hữu hạn thành vị trí cho LineRenderer, bỏ điểm NaN/∞. Trả về số điểm đã chép.
+        /// Tách đường cong thành các đoạn liền để vẽ mỗi đoạn bằng một LineRenderer.
+        /// Cắt tại mẫu NaN/∞, tại bước nhảy (tiệm cận đứng của 1/x, tan x) và bỏ phần |y| &gt; yMax;
+        /// chỗ đường cong ra/vào dải |y| ≤ yMax được nội suy thêm một điểm đúng tại y = ±yMax.
+        /// Ghi vị trí liên tiếp vào positions (cần ít nhất 2 × samples.Length phần tử), mỗi đoạn là
+        /// (chỉ số đầu, số điểm) trong segments. Đoạn dưới 2 điểm bị bỏ; quá segments.Length đoạn thì
+        /// bỏ phần còn lại và truncated = true. Trả về số đoạn.
         /// </summary>
-        public static int FillCurvePositions(Vector2[] samples, Vector3[] positions, float lift)
+        public static int FillCurveSegments(CompiledFunction function, Vector2[] samples, float yMax, float lift,
+            Vector3[] positions, Vector2Int[] segments, out bool truncated)
         {
+            truncated = false;
             var count = 0;
-            foreach (var sample in samples)
+            var segmentCount = 0;
+            var start = -1; // chỉ số đầu của đoạn đang mở trong positions; -1 = không có đoạn mở
+
+            for (var i = 0; i < samples.Length; i++)
             {
-                if (IsFinite(sample.y))
+                var sample = samples[i];
+                var inside = IsFinite(sample.y) && Mathf.Abs(sample.y) <= yMax;
+                var connected = i > 0 && IsConnected(function, samples[i - 1], sample, yMax);
+
+                if (inside)
                 {
+                    if (start >= 0 && !connected)
+                    {
+                        CloseSegment(ref start, ref count, segments, ref segmentCount);
+                    }
+                    if (start < 0)
+                    {
+                        if (segmentCount == segments.Length)
+                        {
+                            truncated = true;
+                            return segmentCount;
+                        }
+                        start = count;
+                        if (connected)
+                        {
+                            // Đi vào dải |y| ≤ yMax từ mẫu trước nằm ngoài
+                            positions[count++] = EdgePoint(samples[i - 1], sample, yMax, lift);
+                        }
+                    }
                     positions[count++] = new Vector3(sample.x, lift, sample.y);
                 }
+                else if (start >= 0)
+                {
+                    if (connected)
+                    {
+                        // Ra khỏi dải |y| ≤ yMax
+                        positions[count++] = EdgePoint(sample, samples[i - 1], yMax, lift);
+                    }
+                    CloseSegment(ref start, ref count, segments, ref segmentCount);
+                }
             }
-            return count;
+
+            if (start >= 0)
+            {
+                CloseSegment(ref start, ref count, segments, ref segmentCount);
+            }
+            return segmentCount;
+        }
+
+        // Hai mẫu liền nhau nối được khi cả hai hữu hạn và không có bước nhảy giữa chúng. Bước nhảy lớn (> yMax)
+        // được kiểm tra bằng trung điểm: hàm liên tục, đơn điệu trên khoảng nhỏ cho f(trung điểm) nằm giữa hai giá trị;
+        // qua tiệm cận đứng thì f(trung điểm) vọt ra ngoài hoặc không xác định.
+        private static bool IsConnected(CompiledFunction function, Vector2 previous, Vector2 current, float yMax)
+        {
+            if (!IsFinite(previous.y) || !IsFinite(current.y))
+            {
+                return false;
+            }
+            if (Mathf.Abs(current.y - previous.y) <= yMax)
+            {
+                return true;
+            }
+
+            var middle = function.Evaluate((previous.x + current.x) * 0.5);
+            return !double.IsNaN(middle) && !double.IsInfinity(middle)
+                   && middle >= Mathf.Min(previous.y, current.y) && middle <= Mathf.Max(previous.y, current.y);
+        }
+
+        // Điểm trên đoạn nối outside – inside có y = ±yMax (cùng dấu với outside).
+        private static Vector3 EdgePoint(Vector2 outside, Vector2 inside, float yMax, float lift)
+        {
+            var edgeY = Mathf.Sign(outside.y) * yMax;
+            var t = (edgeY - inside.y) / (outside.y - inside.y);
+            return new Vector3(Mathf.Lerp(inside.x, outside.x, t), lift, edgeY);
+        }
+
+        private static void CloseSegment(ref int start, ref int count, Vector2Int[] segments, ref int segmentCount)
+        {
+            if (count - start >= 2)
+            {
+                segments[segmentCount++] = new Vector2Int(start, count - start);
+            }
+            else
+            {
+                count = start;
+            }
+            start = -1;
         }
 
         /// <summary>
