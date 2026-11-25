@@ -1,25 +1,36 @@
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Grapher.Core;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 namespace Grapher.Graphing
 {
     /// <summary>
-    /// Vẽ y = f(x) trên [a, b] dưới GraphRoot: đường cong (LineRenderer) và miền giữa đồ thị và Ox (Mesh).
+    /// Vẽ y = f(x) trên [a, b] dưới GraphRoot: đường cong (LineRenderer), miền giữa đồ thị và Ox (Mesh)
+    /// và khối tròn xoay quanh Ox (Mesh).
     /// 1 đơn vị đồ thị = 1 đơn vị local của GraphRoot; phiếu giấy là mặt phẳng XZ.
     /// Hệ số (ví dụ k trong k*sqrt(x)) phải được khai báo bằng SetParameter trước khi gọi Draw.
-    /// Lớp Solid (khối tròn xoay) làm ở S2-10.
     /// </summary>
     public class GraphRenderer : MonoBehaviour, IGraphRenderer
     {
         [Header("Thành phần")]
         [SerializeField] private LineRenderer _curve;
         [SerializeField] private MeshFilter _area;
+        [SerializeField] private MeshFilter _solid;
 
         [Header("Lấy mẫu")]
         [Tooltip("Số điểm lấy mẫu trên [a, b]")]
         [SerializeField] private int _sampleCount = 200;
+
+        [Header("Khối tròn xoay")]
+        [Tooltip("Số đoạn chia mỗi vòng quanh Ox")]
+        [SerializeField] private int _solidSegments = 48;
+
+        [Tooltip("360 = khối đầy đủ (nửa dưới nằm dưới mặt giấy); 180 = chỉ nửa nổi trên giấy")]
+        [SerializeField] private float _solidSweepDegrees = 360f;
 
         [Tooltip("Độ nâng khỏi mặt giấy (đơn vị đồ thị) để không bị nhấp nháy với giấy")]
         [SerializeField] private float _areaLift = 0.01f;
@@ -40,6 +51,18 @@ namespace Grapher.Graphing
         private Vector3[] _areaVertices;
         private Mesh _areaMesh;
 
+        private Vector3[] _solidVertices;
+        private int[] _solidTriangles;
+        private Mesh _solidMesh;
+
+        private readonly Stopwatch _stopwatch = new Stopwatch();
+
+        /// <summary>Thời gian lấy mẫu f(x) (NCalc) lần dựng gần nhất, mili giây.</summary>
+        public double LastSampleMilliseconds { get; private set; }
+
+        /// <summary>Tổng thời gian dựng lại đường cong, miền và khối lần gần nhất, mili giây.</summary>
+        public double LastRebuildMilliseconds { get; private set; }
+
         private void Awake()
         {
             _samples = new Vector2[_sampleCount];
@@ -59,6 +82,16 @@ namespace Grapher.Graphing
             _areaMesh.triangles = CurveGeometry.CreateAreaTriangles(_sampleCount);
             _area.sharedMesh = _areaMesh;
 
+            _solidVertices = new Vector3[SolidGeometry.VertexCount(_sampleCount, _solidSegments)];
+            _solidTriangles = new int[SolidGeometry.TriangleIndexCount(_sampleCount, _solidSegments)];
+            _solidMesh = new Mesh { name = "GraphSolid" };
+            if (_solidVertices.Length > ushort.MaxValue)
+            {
+                _solidMesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
+            }
+            _solidMesh.MarkDynamic();
+            _solid.sharedMesh = _solidMesh;
+
             _curve.useWorldSpace = false;
             Clear();
         }
@@ -74,12 +107,18 @@ namespace Grapher.Graphing
             if (error != null)
             {
                 Debug.LogWarning(error, this);
+                return;
             }
+
+            Debug.Log($"[GraphRenderer] {_initialExpression}: dựng lại {LastRebuildMilliseconds:F2} ms " +
+                      $"(lấy mẫu {LastSampleMilliseconds:F2} ms), {_sampleCount} mẫu × {_solidSegments} đoạn, " +
+                      $"{_solidVertices.Length} đỉnh khối", this);
         }
 
         private void OnDestroy()
         {
             Destroy(_areaMesh);
+            Destroy(_solidMesh);
         }
 
         public string Draw(string expression, float a, float b, Transform parent)
@@ -142,7 +181,7 @@ namespace Grapher.Graphing
                     _area.GetComponent<MeshRenderer>().enabled = visible;
                     break;
                 case GraphLayer.Solid:
-                    // Khối tròn xoay làm ở S2-10.
+                    _solid.GetComponent<MeshRenderer>().enabled = visible;
                     break;
             }
         }
@@ -157,11 +196,19 @@ namespace Grapher.Graphing
             }
             _areaMesh.vertices = _areaVertices;
             _areaMesh.RecalculateBounds();
+
+            Array.Clear(_solidVertices, 0, _solidVertices.Length);
+            Array.Clear(_solidTriangles, 0, _solidTriangles.Length);
+            _solidMesh.vertices = _solidVertices;
+            _solidMesh.triangles = _solidTriangles;
+            _solidMesh.RecalculateBounds();
         }
 
         private void Rebuild()
         {
+            _stopwatch.Restart();
             CurveGeometry.Sample(_function, _a, _b, _samples);
+            LastSampleMilliseconds = _stopwatch.Elapsed.TotalMilliseconds;
 
             var count = CurveGeometry.FillCurvePositions(_samples, _curvePositions, _curveLift);
             _curve.positionCount = count;
@@ -170,6 +217,15 @@ namespace Grapher.Graphing
             CurveGeometry.FillAreaVertices(_samples, _areaVertices, _areaLift);
             _areaMesh.vertices = _areaVertices;
             _areaMesh.RecalculateBounds();
+
+            SolidGeometry.Fill(_samples, _solidSegments, _solidSweepDegrees * Mathf.Deg2Rad,
+                _solidVertices, _solidTriangles);
+            _solidMesh.vertices = _solidVertices;
+            _solidMesh.triangles = _solidTriangles;
+            _solidMesh.RecalculateNormals();
+            _solidMesh.RecalculateBounds();
+
+            LastRebuildMilliseconds = _stopwatch.Elapsed.TotalMilliseconds;
         }
     }
 }
