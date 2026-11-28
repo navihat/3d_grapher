@@ -25,7 +25,7 @@ Cập nhật 16/11 theo hướng thể tích khối tròn xoay ([biên bản 10/
 | 1 | 02–08/11 | Đăng ký đề, khởi tạo project + repo, quy ước nhóm | | xem báo cáo tuần 1 |
 | 2 | 09–15/11 | Quét phiếu in v1, đồ thị y = f(x) và khối tròn xoay nổi đúng trên hệ trục in, chạy trên Android thật; nghiên cứu lại tài liệu, viết mục tiêu học tập và lý thuyết học tập | Gate 1 trượt, dời sang 22/11 | [sprint-02.md](sprint-02.md) (chưa xong, chuyển sang sprint 3) |
 | 3 | 16–22/11 | Làm bù việc sprint 2 còn dở; parser + bộ test; đường cong y = f(x), tô miền, khối tròn xoay quanh Ox; khớp hệ trục AR với hệ trục in; cấu trúc dữ liệu bài tập | **Gate 1 (22/11):** marker tracking ổn định | [sprint-03.md](sprint-03.md) |
-| 4 | 23–29/11 | Chồng n đĩa mỏng với thanh trượt n; chọn và sửa hệ số hàm; bàn phím toán nhập đáp số; nhiều target nếu kịp; luồng POE và chấm điểm chỉ ra bước sai; ghi log | | |
+| 4 | 23–29/11 | Chồng n đĩa mỏng với thanh trượt n; chọn và sửa hệ số hàm; bàn phím toán nhập đáp số; nhiều target nếu kịp; luồng POE và chấm điểm chỉ ra bước sai; ghi log | **Gate 1 (thử lại, 29/11)** | [sprint-04.md](sprint-04.md) |
 | 5 | 30/11–06/12 | Ghép 3 phần vào Main scene; Extended Tracking; nháp nội dung bài tập và câu hỏi pre/post | **Gate 2 (06/12):** chốt tính năng lõi | |
 | 6 | 07–13/12 | Đủ 3–4 bài POE; in phiếu chính thức; thử nội bộ với 2 người; nhập hàm tự do và OCR chỉ khi lõi đã ổn | **Gate 3 (13/12):** app sẵn sàng thử nghiệm | |
 | 7 | 14–20/12 | Đánh giá với 5–10 bạn cùng lớp: pre-test → học với app → post-test + SUS + phỏng vấn | | |
